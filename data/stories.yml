@@ -1,30 +1,91 @@
 version: "3.1"
+# Sáng tạo ra nhiều câu chuyện khác nhau để chatbot phản ứng với ý định của người dùng
 
 stories:
-
+- story: ask information
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_ability
+  - action: utter_show_ability
+  - intent: goodbye
+  - action: utter_goodbye
+  
 - story: happy path
   steps:
   - intent: greet
   - action: utter_greet
-  - intent: mood_great
+  - intent: ask_ability
+  - action: utter_show_ability
+  - intent: praise
   - action: utter_happy
+  - intent: thanks
+  - action: utter_thanks
 
-- story: sad path 1
+- story: sad path
   steps:
   - intent: greet
   - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: affirm
-  - action: utter_happy
-
-- story: sad path 2
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: deny
+  - intent: ask_ability
+  - action: utter_show_ability
+  - intent: decry
+  - action: utter_sorry
+  - intent: goodbye
   - action: utter_goodbye
+
+- story: Hoi_ten_bot
+  steps:
+  - intent: ask_bot_name
+  - action: utter_ask_bot_name
+
+- story: Hoi_suc_khoe
+  steps:
+  - intent: howareyou
+  - action: utter_howareyou
+
+- story: challange path
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- story: trung_tam_thanh_pho
+  steps:
+  - intent: trung_tam_thanh_pho
+  - action: utter_trung_tam_thanh_pho
+
+- story: ngoai_o_thanh_pho
+  steps:
+  - intent: ngoai_o_thanh_pho
+  - action: utter_ngoai_o_thanh_pho
+
+- story: khach_san_hang_sao
+  steps:
+  - intent: khach_san_hang_sao
+  - action: utter_khach_san_hang_sao
+
+- story: khach_san_1_sao
+  steps:
+  - intent: khach_san_1_sao
+  - action: utter_khach_san_1_sao
+
+- story: khach_san_2_sao
+  steps:
+  - intent: khach_san_2_sao
+  - action: utter_khach_san_2_sao
+
+- story: khach_san_3_sao
+  steps:
+  - intent: khach_san_3_sao
+  - action: utter_khach_san_3_sao
+
+- story: khach_san_4_sao
+  steps:
+  - intent: khach_san_4_sao
+  - action: utter_khach_san_4_sao
+
+- story: khach_san_5_sao
+  steps:
+  - intent: khach_san_5_sao
+  - action: utter_khach_san_5_sao
+
+

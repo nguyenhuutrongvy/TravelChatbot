@@ -1,8 +1,16 @@
 version: "3.1"
-
+# Chỉ định cách ứng xử của bot
+# Dạy cho bot biết cách phản ứng lại với các lời chat như thế nào
+# intent: điền tên ý định đã định nghĩa ở nlu.yml
+# action: điền tên response đã định nghĩa ở domain.yml, còn có thể điền tên action
 rules:
 
-- rule: Say goodbye anytime the user says goodbye
+- rule: Say 'Hello' anytime the user says hello
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: Say 'goodbye' anytime the user says goodbye
   steps:
   - intent: goodbye
   - action: utter_goodbye
@@ -11,3 +19,133 @@ rules:
   steps:
   - intent: bot_challenge
   - action: utter_iamabot
+
+- rule: Say 'sorry' anytime the user uncomfortable
+  steps:
+  - intent: decry
+  - action: utter_sorry
+
+- rule: Say 'thank you' anytime the user challenges
+  steps:
+  - intent: thanks
+  - action: utter_thanks
+
+- rule: Say 'thank' anytime the praise
+  steps:
+  - intent: praise
+  - action: utter_happy
+
+- rule: Say 'ability' anytime the user ask ability
+  steps:
+  - intent: ask_ability
+  - action: utter_show_ability
+
+- rule: Say 'I am fine' anytime the user ask how are you
+  steps:
+  - intent: howareyou
+  - action: utter_howareyou
+
+- rule: Say 'name' anytime the user ask your name
+  steps:
+  - intent: ask_bot_name
+  - action: utter_ask_bot_name
+
+- rule: Say 'trungtam' anytime the user ask your "trung_tam_thanh_pho"
+  steps:
+  - intent: trung_tam_thanh_pho
+  - action: utter_trung_tam_thanh_pho
+
+- rule: ngoai_o_thanh_pho
+  steps:
+  - intent: ngoai_o_thanh_pho
+  - action: utter_ngoai_o_thanh_pho
+
+- rule: Say 'khach_san_hang_sao' anytime the user ask your "khach_san_hang_sao"
+  steps:
+  - intent: khach_san_hang_sao
+  - action: utter_khach_san_hang_sao
+
+- rule: Say 'khach_san_1_sao' anytime the user ask your "khach_san_1_sao"
+  steps:
+  - intent: khach_san_1_sao
+  - action: utter_khach_san_1_sao
+
+- rule: Say 'khach_san_2_sao' anytime the user ask your "khach_san_2_sao"
+  steps:
+  - intent: khach_san_2_sao
+  - action: utter_khach_san_2_sao
+
+- rule: khach_san_3_sao
+  steps:
+  - intent: khach_san_3_sao
+  - action: utter_khach_san_3_sao
+
+- rule: khach_san_4_sao
+  steps:
+  - intent: khach_san_4_sao
+  - action: utter_khach_san_4_sao
+
+- rule: khach_san_5_sao
+  steps:
+  - intent: khach_san_5_sao
+  - action: utter_khach_san_5_sao
+
+- rule: nha_nghi
+  steps:
+  - intent: nha_nghi
+  - action: utter_nha_nghi
+
+- rule: homestay
+  steps:
+  - intent: homestay
+  - action: utter_homestay
+
+- rule: dich_vu
+  steps:
+  - intent: dich_vu
+  - action: utter_dich_vu
+
+- rule: dich_vu_thue_xe_may
+  steps:
+  - intent: dich_vu_thue_xe_may
+  - action: utter_dich_vu_thue_xe_may
+
+- rule: dich_vu_thue_oto
+  steps:
+  - intent: dich_vu_thue_oto
+  - action: utter_dich_vu_thue_oto
+
+- rule: nha_xe_Phuong_Trang
+  steps:
+  - intent: nha_xe_Phuong_Trang
+  - action: utter_nha_xe_Phuong_Trang
+
+- rule: nha_xe_Thanh_Buoi
+  steps:
+  - intent: nha_xe_Thanh_Buoi
+  - action: utter_nha_xe_Thanh_Buoi
+
+- rule: nha_xe_Nguyen_Kim
+  steps:
+  - intent: nha_xe_Nguyen_Kim
+  - action: utter_nha_xe_Nguyen_Kim
+
+- rule: dich_vu_thue_chup_hinh
+  steps:
+  - intent: dich_vu_thue_chup_hinh
+  - action: utter_dich_vu_thue_chup_hinh
+
+- rule: dich_vu_dat_ve_xe
+  steps:
+  - intent: dich_vu_dat_ve_xe
+  - action: utter_dich_vu_dat_ve_xe
+
+- rule: dich_vu_dat_phong
+  steps:
+  - intent: dich_vu_dat_phong
+  - action: utter_dich_vu_dat_phong
+
+- rule: trung_tam_huong_dan_tours
+  steps:
+  - intent: trung_tam_huong_dan_tours
+  - action: utter_trung_tam_huong_dan_tours

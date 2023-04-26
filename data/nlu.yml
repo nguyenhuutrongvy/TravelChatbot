@@ -1,5 +1,6 @@
 version: "3.1"
-
+# Định nghĩa các ý định 
+# Chứa các ví dụ mẫu để dạy cho bot nhận diện ý định (intent) của người dùng
 nlu:
 - intent: greet
   examples: |
@@ -16,76 +17,361 @@ nlu:
     - goodmorning
     - goodevening
     - good afternoon
+    - chào trường
+    - xin chào
+    - chào
+    - chào bạn
+    - hello trường
+    - hi trường
+    - ad ơi, cho anh hỏi
+    - ad ơi, cho mình hỏi
+    - ad ơi, cho em hỏi
+    - ad ơi, cho tui hỏi
+    - bot ơi
+    - cho mình hỏi chút
+    - hello
+    - hi
+    - hey
+    - mình có vài câu hỏi
+    - có ai giúp mình không
+    - bạn ơi
+    - anh ơi
+    - chị ơi
+    - cháu ơi
+    - ad ơi
+    - alo
+    - alo alo
+    - có ai ở đây không?
+    - Cho em hỏi
+    - cho tôi hỏi
+    - tôi muốn hỏi
+    - cho em hỏi
+    - cho mình hỏi
+
+- intent: ask_bot_name
+  examples: |
+    - bạn tên gì
+    - bạn tên là gì
+    - tên bạn là gì
+    - bot tên gì
+    - mày tên gì
+    - tên của mày
+    - cho mình biết tên bạn với
+    - cho mình tên bạn
+    - gọi bạn như thế nào
+    - mình gọi bạn là gì
+    - tên gì
+    - chị tên gì
+    - anh tên gì
+    - em tên gì
+    - tên em là gì
+    - tên em
+    - tên bạn
+    - em tên là gì thế
+    - bạn tên gì thế
+    - tên của bạn là gì
+    - tên của chị là gì
+    - tên của anh là gì
+    - cho mình hỏi tên nhé
+    - mình muốn biết tên bạn
+    - mình muốn tiện xưng hộ hơn, cho mình biết tên nhé
+    - để tiện xưng hộ thì tên bạn là gì
+    - cho em xin tên của anh ạ
+    - cho em xin tên của chị ạ
+    - được biết tên bạn thì tốt nhỉ
+    - vui lòng cho mình biết tên nhé
+    - xin phép hỏi tên của bạn
+    - vậy thì tên bạn là gì
+    - tên bạn trong tiếng việt là gì
+    - bạn có vui lòng cho mình biết tên được không
+    - chúng ta nên biết tên nhau nhỉ?
+
+- intent: ask_ability
+  examples: |
+    - bạn có thể làm những gì nhỉ
+    - bạn có chức năng gì?
+    - bạn giúp gì được tôi không?
+    - bạn có thể giúp gì cho tôi?
+    - bạn biết làm gì?
+    - bạn hỗ trợ như thế nào?
+    - bạn có thể làm được những gì
+    - bạn giúp được gì nào
+    - chức năng của bạn là gì
+    - bạn có thể làm được mấy chức năng
+    - bạn giỏi nhất làm gì
+    - bạn có tư vấn giúp mình được không
+    - việc gì bạn làm được
+    - kể xem bạn làm được gì
+    - cho mình biết bạn làm được gì nhé
+    - bạn hữu dụng như thế nào
+    - bạn có ích trong những việc gì
+    - lĩnh vực gì bạn giỏi nhất
+    - mình tò mò về những việc bạn làm được
+    - chẳng biết bạn làm được gì
+    - bạn tệ nhất trong việc gì
+    - bạn biết được những lĩnh vực gì
+    - bạn giỏi hỗ trợ nhất trong lĩnh vực gì
+    - kể cho mình biết những việc bạn có thể làm được nhé
+    - nói cho mình về những việc bạn giúp được mình
+    - bạn giúp được mình gì nào
+    - bạn có thể làm gì
+    - em giúp được gì
+    - em làm được gì
+    - mày biết làm gì
+    - em biết làm gì
+    - bạn biết làm gì
+    - biết làm gì
+    - làm được gì
+    - có làm được gì
+    - có làm được trò gì
+    - giúp giúp cái gì
+    - biết gì mà nói
+    - giúp được gì
+    - mày làm được gì
+    - có biết gì
+
+- intent: howareyou
+  examples: |
+    - bạn khỏe không
+    - bạn thế nào
+    - bạn ổn chứ
+    - còn sống chứ
+    - bạn còn đó không
+    - bạn còn tốt không
+    - bạn tốt chứ
 
 - intent: goodbye
   examples: |
-    - cu
-    - good by
-    - cee you later
-    - good night
     - bye
     - goodbye
-    - have a nice day
-    - see you around
+    - g9
+    - good night
     - bye bye
-    - see you later
+    - tạm biệt
+    - Hẹn gặp lại
+    - Ngủ ngon
+    - Chúc ngủ ngon
+    - Nói chuyện sau nhé
+    - Tôi sẽ liên hệ sau
+    - tạm biệt em
+    - tạm biệt bot nhá
+    - tạm biệt bot
 
-- intent: affirm
+- intent: thanks
   examples: |
-    - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
+    - cám ơn
+    - ok
+    - cảm ơn bot
+    - cảm ơn bạn nhiều nhé
+    - cảm ơn
+    - cảm ơn trường
+    - cảm ơn bạn
+    - cảm ơn trường nha
+    - cảm ơn nha
+    - cảm ơn bot nha
+    - thank
+    - thanks
+    - thank you
+    - thanks bot
+    - thanks trường nha
 
-- intent: deny
+- intent: praise
   examples: |
-    - no
-    - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
-
-- intent: mood_great
-  examples: |
-    - perfect
+    - chuẩn
+    - hay
+    - siêu
+    - tuyệt
+    - giỏi
+    - tốt
+    - good job
+    - bot giỏi quá
     - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
+    - awsome
+    - bot làm tốt lắm
+    - ui giỏi thế
+    - bot thông minh
+    - bạn rất thông minh
 
-- intent: mood_unhappy
+- intent: decry
   examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
+    - quá tệ
+    - ngu ngốc
+    - chả biết gì cả
+    - ngu thật
+    - dở ghê
+    - có thế mà cũng không biết
+    - kém cói
+    - sai tùm lum
+    - không phải
+    - không đúng rồi
+    - sai rồi
+    - không đúng
+    - tào lao
+    - nhầm rồi
 
 - intent: bot_challenge
   examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
+    - bạn là người máy à
+    - bạn là người hay máy
+    - bạn là bot à
+    - tôi đang nói chuyện với người hay máy
+
+- intent: trung_tam_thanh_pho
+  examples: |
+    - cho tôi hỏi trung tâm thành phố có những địa điểm du lịch nào
+    - cho em hỏi trung tâm thành phố có những địa điểm du lịch nào
+    - trung tâm thành phố có những địa điểm du lịch nào ạ
+    - những phường ở trung tâm thành phố có địa điểm du lịch
+    - trung tâm thành phố có những phường nào
+    - trung tâm thành phố có những điểm du lịch nổi tiếng nào
+    - những điểm du lịch hấp dẫn ở trung tâm thành phố
+
+- intent: ngoai_o_thanh_pho
+  examples: |
+    - cho tôi hỏi ngoại ô thành phố có những địa điểm du lịch nào
+    - cho em hỏi ngoại ô thành phố có những địa điểm du lịch nào
+    - ngoại ô thành phố có những địa điểm du lịch nào ạ
+    - những phường ở ngoại ô thành phố có địa điểm du lịch
+    - ngoại ô thành phố có những phường nào
+    - ngoại ô thành phố có những điểm du lịch nổi tiếng nào
+    - những điểm du lịch hấp dẫn ở ngoại ô thành phố
+
+- intent: khach_san_hang_sao
+  examples: |
+    - cho tôi hỏi khách sạn hạng sao 
+    - cho em hỏi khách sạn hạng sao ở thành phố 
+    - khách sạn hạng sao ở thành phố ạ
+    - những khách sạn hạng sao ở thành phố ạ
+
+- intent: khach_san_1_sao
+  examples: |
+    - cho tôi hỏi khách sạn 1 sao 
+    - cho em hỏi khách sạn 1 sao ở thành phố 
+    - khách sạn 1 sao ở thành phố ạ
+    - những khách sạn 1 sao ở thành phố ạ
+
+- intent: khach_san_2_sao
+  examples: |
+    - cho tôi hỏi khách sạn 2 sao 
+    - cho em hỏi khách sạn 2 sao ở thành phố 
+    - khách sạn 2 sao ở thành phố ạ
+    - những khách sạn 2 sao ở thành phố ạ
+
+- intent: khach_san_3_sao
+  examples: |
+    - cho tôi hỏi khách sạn 3 sao 
+    - cho em hỏi khách sạn 3 sao ở thành phố 
+    - khách sạn 3 sao ở thành phố ạ
+    - những khách sạn 3 sao ở thành phố ạ
+
+- intent: khach_san_4_sao
+  examples: |
+    - cho tôi hỏi khách sạn 4 sao 
+    - cho em hỏi khách sạn 4 sao ở thành phố 
+    - khách sạn 4 sao ở thành phố ạ
+    - những khách sạn 4 sao ở thành phố ạ
+
+- intent: khach_san_5_sao
+  examples: |
+    - cho tôi hỏi khách sạn 5 sao 
+    - cho em hỏi khách sạn 5 sao ở thành phố 
+    - khách sạn 5 sao ở thành phố ạ
+    - những khách sạn 5 sao ở thành phố ạ
+
+- intent: nha_nghi
+  examples: |
+    - cho tôi hỏi nhà nghỉ 
+    - cho em hỏi trung tâm thành phố có những địa điểm du lịch nào
+    - trung tâm thành phố có những địa điểm du lịch nào ạ
+    - những phường ở trung tâm thành phố có địa điểm du lịch
+
+- intent: homestay
+  examples: |
+    - cho tôi hỏi homestay
+    - cho em hỏi homestay thành phố có những địa điểm du lịch nào
+    - trung tâm thành phố có những địa điểm du lịch nào ạ
+    - những phường ở trung tâm thành phố có địa điểm du lịch
+
+- intent: uu_dai_tot_nhat
+  examples: |
+    - cho tôi hỏi cơ sở lưu trú nào có giá ưu đãi nhất
+    - cho em hỏi cơ sở lưu trú nào có giá ưu đãi nhất
+    - khách sạn nào có giá ưu đãi nhất
+    - nhà nghỉ nào có giá ưu đãi nhất
+    - homestay nào có giá ưu đãi nhất
+    - khách sạn có giá ưu đãi nhất
+    - nhà nghỉ có giá ưu đãi nhất
+    - homestay có giá ưu đãi nhất
+
+- intent: gia_re
+  examples: |
+    - cho tôi hỏi cơ sở lưu trú nào có giá rẻ
+    - cho tôi hỏi khách sạn nào có giá rẻ
+    - cho tôi hỏi nhà nghỉ nào có giá rẻ
+    - cho tôi hỏi homestay nào có giá rẻ
+    - cho em hỏi cơ sở lưu trú nào có giá rẻ
+    - cho em hỏi khách sạn nào có giá rẻ
+    - cho em hỏi nhà nghỉ nào có giá rẻ
+    - cho em hỏi homestay nào có giá rẻ
+    - khách sạn nào có giá rẻ
+    - nhà nghỉ nào có giá rẻ
+    - homestay nào có giá rẻ
+    - khách sạn có giá rẻ
+    - nhà nghỉ có giá rẻ
+    - homestay có giá rẻ
+
+- intent: dich_vu_thue_xe
+  examples: |
+    - tôi muốn tìm dịch vụ thuê xe di chuyển
+    - em muốn tìm dịch vụ thuê xe di chuyển
+    - mình muốn tìm dịch vụ thuê xe di chuyển
+    - tìm dịch vụ thuê xe di chuyển
+    - dịch vụ thuê xe di chuyển ở thành phố
+
+- intent: dich_vu_thue_xe_may
+  examples: |
+    - tôi muốn tìm dịch vụ thuê xe máy di chuyển
+    - em muốn tìm dịch vụ thuê xe máy di chuyển
+    - mình muốn tìm dịch vụ thuê xe máy di chuyển
+    - tìm dịch vụ thuê xe máy di chuyển
+    - dịch vụ thuê xe máy di chuyển ở thành phố
+
+- intent: dich_vu_thue_oto
+  examples: |
+    - tôi muốn tìm dịch vụ thuê oto di chuyển
+    - em muốn tìm dịch vụ thuê oto di chuyển
+    - mình muốn tìm dịch vụ thuê oto di chuyển
+    - tìm dịch vụ thuê oto di chuyển
+    - dịch vụ thuê oto di chuyển ở thành phố
+
+- intent: dich_vu_thue_chup_hinh
+  examples: |
+    - tôi muốn tìm dịch vụ chụp hình
+    - em muốn tìm dịch vụ chụp hình
+    - mình muốn tìm dịch vụ chụp hình
+    - tìm dịch vụ chụp hình
+    - tôi muốn tìm dịch vụ thuê chụp hình
+    - em muốn tìm dịch vụ thuê chụp hình
+    - mình muốn tìm dịch vụ thuê chụp hình
+    - tìm dịch vụ thuê chụp hình
+    - dịch vụ chụp hình
+    - dịch vụ thuê chụp hình
+    
+- intent: dich_vu_dat_ve_xe
+  examples: |
+    - tôi muốn tìm dịch vụ đặt vé xe
+    - em muốn tìm dịch vụ đặt vé xe
+    - mình muốn tìm dịch vụ đặt vé xe
+    - tìm dịch vụ đặt vé xe
+    - dịch vụ đặt vé xe
+
+- intent: dich_vu_dat_phong
+  examples: |
+    - tôi muốn tìm đặt phòng không có View
+    - em muốn tìm đặt phòng không có View
+    - mình muốn tìm đặt phòng không có View
+    - tui muốn tìm đặt phòng không có View
+    - tôi muốn tìm đặt phòng có View
+    - em muốn tìm đặt phòng có View
+    - mình muốn tìm đặt phòng có View
+    - tui muốn tìm đặt phòng có View

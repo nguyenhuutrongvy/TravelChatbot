@@ -1,34 +1,401 @@
 version: "3.1"
-
-intents:
-  - greet
-  - goodbye
-  - affirm
-  - deny
-  - mood_great
-  - mood_unhappy
-  - bot_challenge
-
-responses:
-  utter_greet:
-  - text: "Hey! How are you?"
-
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
-
-  utter_did_that_help:
-  - text: "Did that help you?"
-
-  utter_happy:
-  - text: "Great, carry on!"
-
-  utter_goodbye:
-  - text: "Bye"
-
-  utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
-
+# Định nghĩa các câu trả lời của bot
+# Khai báo các đối tượng và cấu hình chatbot sẽ dùng
+# intents: khai báo các intent đã định nghĩa ở nlu.yml
+# responses: khai báo những câu thoại của bot
+config:
+  store_entities_as_slots: true
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
+
+intents:
+  # - greet:
+  #     use_entities: true
+  # - goodbye:
+  #     use_entities: true
+  # - ask_ability:
+  #     use_entities: true
+  # - ask_bot_name:
+  #     use_entities: true
+  # - thanks:
+  #     use_entities: true
+  # - howareyou:
+  #     use_entities: true
+  # - praise:
+  #     use_entities: true
+  # - decry:
+  #     use_entities: true
+  # - bot_challenge:
+  #     use_entities: true
+  - greet
+  - goodbye
+  - ask_ability
+  - ask_bot_name
+  - thanks
+  - howareyou
+  - praise
+  - decry
+  - bot_challenge
+  - trung_tam_thanh_pho
+  - ngoai_o_thanh_pho
+  - khach_san_hang_sao
+  - khach_san_1_sao
+  - khach_san_2_sao
+  - khach_san_3_sao
+  - khach_san_4_sao
+  - khach_san_5_sao
+  - nha_nghi
+  - homestay
+  - uu_dai_tot_nhat
+  - gia_re
+  - dich_vu
+  - dich_vu_thue_xe
+  - dich_vu_thue_xe_may
+  - dich_vu_thue_oto
+  - nha_xe_Phuong_Trang
+  - nha_xe_Thanh_Buoi
+  - nha_xe_Nguyen_Kim
+  - dich_vu_thue_chup_hinh
+  - dich_vu_dat_ve_xe
+  - dich_vu_dat_phong
+  - trung_tam_huong_dan_tours
+
+responses:
+  utter_greet:
+  - text: |-
+      Chào bạn. 
+      Tôi là chatbot được thiết kế để cung cấp cho bạn một số thông tin về du lịch như:
+      - Các địa điểm du lịch tại Đà Lạt
+      - Những khách sạn, nhà nghỉ hay homestay tại Đà Lạt
+      - Mẹo khi đi du lịch
+      - Kinh nghiệm khi đi du lịch
+      - Ẩm thực ở Đà Lạt
+      - Các tours du lịch
+      - Các dịch vụ hỗ trợ du khách
+    buttons:
+      - title: Điểm du lịch
+        payload: /trung_tam_thanh_pho
+      - title: Khách sạn
+        payload: /khach_san_hang_sao
+      - title: Nhà nghỉ
+        payload: /nha_nghi
+      - title: Homestay
+        payload: /homestay
+      - title: Tours
+        payload: /tours
+      - title: Dịch vụ dành cho du khách
+        payload: /dich_vu
+
+  utter_goodbye:
+  - image: https://i.imgur.com/nGF1K8f.jpg
+    text: Tạm biệt. Cảm ơn vì đã hỏi tôi. Tôi luôn sẵn sàng phục vụ.
+  
+  utter_howareyou:
+  - text: Tôi vẫn khỏe, cảm ơn bạn đã hỏi thăm. Chúc bạn một ngày tốt lành.
+  
+  utter_ask_ability:
+  - text: "I am a bot"
+
+  utter_ask_bot_name:
+  - text: Tôi tên Du Lịch Bot. Rất vui được hỗ trợ bạn.
+  
+  utter_did_that_help:
+  - text: Thông tin mà tôi cung cấp có đúng yêu cầu của bạn chưa. Nếu chưa bạn hãy đặt lại câu hỏi rõ ràng hơn chút nhé.?
+  
+  utter_sorry:
+  - text: Tôi xin lỗi vì chưa quá thông minh nên chưa hiểu được bạn muốn hỏi gì. Bạn hãy hỏi lại đơn giản, rõ ràng hơn giúp tôi nhé.
+  
+  utter_thanks:
+  - text: Không có gì. Tôi luôn sẵn sàng hỗ trợ bạn. cảm ơn bạn đã hỏi.
+  
+  utter_happy:
+  - text: Cảm ơn bạn đã khen tôi. Tôi luôn sẵn lòng cung cấp thông tin cho bạn bất cứ lúc nào.
+
+  utter_iamabot:
+  - text: Tôi là người máy trợ lý được tạo bởi nhóm Xây dựng ứng dụng chatbot hỗ trợ tư vấn thông tin du lịch.
+  
+  utter_no_entity:
+  - text: Tôi không xác định được thông tin từ câu hỏi của bạn. Bạn kiểm tra lại giúp tôi thông tin bạn nhập đúng chưa nhé. Nếu đúng rồi thì bạn đặt câu hỏi đơn giản hơn tí nhé.
+  
+  utter_show_ability:
+  - text: Tôi có thể cung cấp cho bạn các thông tin liên quan tới du lịch Đà Lạt.
+
+  utter_praise:
+  - text: Cảm ơn bạn đã khen tôi. Tôi luôn sẵn lòng cung cấp thông tin cho bạn bất cứ lúc nào.
+  
+  utter_decry:
+  - text: Tôi xin lỗi vì chưa quá thông minh nên chưa hiểu được bạn muốn hỏi gì. Bạn hãy hỏi lại đơn giản, rõ ràng hơn giúp tôi nhé.
+
+  utter_bot_challenge:
+  - text: Tôi là người máy trợ lý được tạo bởi nhóm Xây dựng ứng dụng chatbot hỗ trợ tư vấn thông tin du lịch.
+
+  utter_trung_tam_thanh_pho:
+  - text: |-
+      Trung tâm thành phố là nơi tập trung nhiều điểm tham quan nổi tiếng của Đà Lạt, mang đậm giá trị văn hóa lịch sử. Có những địa điểm du lịch nổi tiếng như:
+      - Hồ Xuân Hương được coi là trái tim của thành phố.
+      - Ga Đà Lạt toạ lạc trên con đường Quang Trung, phường 9.
+      - Trường cao đẳng sư phạm Đà Lạt nằm trên đường Yersin, phường 10.
+      - Quảng trường Đà Lạt nằm ngay bên cạnh hồ Xuân Hương, trên đường Trần Quốc Toản, phường 1.
+      - Chợ Đà Lạt, Chợ Đêm là khu vực sầm uất nhất thành phố ngàn hoa, nằm trên trục đường Nguyễn Thị Minh Khai, phường 1.
+      - Nhà thờ Con Gà - nhà thờ Chính Toà nằm trên đường Trần Phú, phường 3.
+      - Đồi Cù nằm giữa trung tâm thành phố, kế bên Hồ Xuân hương, phường 8.
+      - Vườn hoa Thành Phố trên đường Trần Quốc Toản, phường 8.
+      - Thung lũng tình yêu nằm ở đường Mai Anh Đào, phường 8.
+      - Vườn Ánh Sáng Lumiere 222B, đường Mai Anh Đào, phường 8.
+    buttons:
+      - title: Quay lại
+        payload: /greet
+
+  utter_ngoai_o_thanh_pho:
+  - text: |-
+      Đà Lạt luôn nổi tiếng là một thành phố du lịch hấp dẫn, tuyệt vời, đặc biệt là những khu du lịch ngoại ô Đà Lạt, gần gũi với thiên nhiên như:
+      - Thác Datanla nằm ở Quốc lộ 20, đèo Prenn, phường 3.
+      - Đồi Robin nằm ở số 1, đường Đống Đa, phường 3.
+      - Hồ Tuyền Lâm phường 4.
+      - Đường hầm điêu khắc - Đường hầm đất sét à đường hầm dài nhất thế giới được làm bằng đất sét, nằm ở đường Hoa Hồng, phường 4. 
+      - Hoa Sơn Điền Trang hướng đi đèo Tà Nung, phường 5.
+      - Vùng đất cổ tích Fairytale Land - Hầm rượu vang Vĩnh Tiến là “thánh địa sống ảo” nằm ở 1D Hoàng Văn Thụ, phường 5.
+      - Làng hoa Vạn Thành toạ lạc trên đường Vạn Thành, phường 5.
+      - Nông trại Cún - Puppy Farm nằm ở đường Cam Ly, thôn Măng lin, phường 7.
+      - Nhà thờ Domaine De Marie - nhà thờ Mai Anh toạ lạc trên đồi Mai Anh nằm ở số 1, Ngô Quyền, phường 6.
+      - Làng hoa Thái Phiên nằm ở đường Tự Phước, phường 12.
+      - Chùa Linh Phước ngay trên Quốc lộ 1A, thuộc địa bàn Trại Mát, đường Tự Phước, Trại Mát, phường 11.
+      - Đồi chè Cầu Đất thôn Cầu Đất, xã Xuân Trường.
+      - QUE Garden dành cho những du khách yêu thích nghệ thuật cây cảnh bonsai nằm toạ lạc trên đoạn đèo Mimosa, phường 10.
+      - Chùa Tàu - Thiên Vương Cổ Sát toạ lạc tại đường Khe Sanh, phường 10.
+      - Cây thông cô đơn - Suối Vàng là cung đường đẹp nhất Đà Lạt nằm ở đường Ankroet, xã Lát, huyện Lạc Dương.
+      - Café Mê Linh Garden thôn 4, xã Tà Nung.
+      - Làng Cù Lần thôn Suối Cạn, xã Lát, huyện Lạc Dương.
+      # - Vườn Thú ZooDoo ở tiểu khu 94A, xã Đa Nhim, huyện Lạc Dương
+      # - Núi LangBiang thuộc thị trấn Lạc Dương, huyện Lạc Dương
+      # - Đà Lạt Milk Farm 
+      # - Ma rừng lữ quán xã Lát, huyện Lạc Dương
+    buttons:
+      - title: Quay lại
+        payload: /greet
+
+  utter_khach_san_hang_sao:
+  - text: Những khách sạn theo hạng ở Đà Lạt.
+    buttons:
+      - title: Khách sạn 1 sao
+        payload: /khach_san_1_sao
+      - title: Khách sạn 2 sao
+        payload: /khach_san_2_sao
+      - title: Khách sạn 3 sao
+        payload: /khach_san_3_sao
+      - title: Khách sạn 4 sao
+        payload: /khach_san_4_sao
+      - title: Khách sạn 5 sao
+        payload: /khach_san_5_sao
+      - title: Quay lại
+        payload: /greet
+
+  utter_khach_san_1_sao:
+  - text: |-
+      - Khách sạn M&T Đà Lạt - Khách sạn 1 sao gần hồ Xuân Hương, nằm ở số 95 Bùi Thị Xuân, Phường 2
+      - Ken's house - Khách sạn 1 sao gần trung tâm Đà Lạt, địa chỉ: 
+        + Cơ sở 1: 45 Nam Kỳ Khởi Nghĩa, Phường 1, Thành phố Đà Lạt
+        + Cơ sở 2: 49 Nam Kỳ Khởi Nghĩa, Phường 1, Thành phố Đà Lạt
+        + Cơ sở 3: Lô C16, Hoàng Văn Thụ, phường 4, Thành phố Đà Lạt
+      - Khách sạn Hải Quyên Đà Lạt, địa chỉ: số 01 Thủ Khoa Huân, Phường 1
+    buttons:
+      - title: Khách sạn theo hạng
+        payload: /khach_san_hang_sao
+      - title: Quay lại
+        payload: /greet
+
+  utter_khach_san_2_sao:
+  - text: |-
+      - Khách sạn Xuân Hồng 2, địa chỉ: số 69 - 71 Nam Kỳ Khởi Nghĩa, Phường 1
+      - Khách sạn Ngọc Nguyên Anh, địa chỉ: số  103 Bùi Thị Xuân, Phường 2
+      - Moran DaLat Hotel, địa chỉ: số 05 Hoàng Diệu, Phường 2
+    buttons:
+      - title: Khách sạn theo hạng
+        payload: /khach_san_hang_sao
+      - title: Quay lại
+        payload: /greet
+
+  utter_khach_san_3_sao:
+  - text: |-
+      - Khách sạn Victory Đà Lạt địa chỉ: số 50 Phan Như Thạch, Phường 1
+      - Khách Sạn Royal Đà Lạt - Ngay bên cạnh chợ Đà Lạt, địa chỉ: số 24 Nguyễn Chí Thanh, Phường 1
+    buttons:
+      - title: Khách sạn theo hạng
+        payload: /khach_san_hang_sao  
+      - title: Quay lại
+        payload: /greet
+
+  utter_khach_san_4_sao:
+  - text: |-
+      - Mường Thanh Đà Lạt Hotel - Cạnh hồ Xuân Hương Đà Lạt địa chỉ: số 42 Phan Bội Châu, Phường 2
+      - Kings DaLat Hotel địa chỉ: số 10 Bùi Thị Xuân, Phường 3
+      - Sammy Đà Lạt Hotel địa chỉ: số 01 Lê Hồng Phong, Phường 4
+    buttons:
+      - title: Khách sạn theo hạng
+        payload: /khach_san_hang_sao
+      - title: Quay lại
+        payload: /greet
+
+  utter_khach_san_5_sao:
+  - text: |-
+      - Dalat Palace
+      - Ladalat
+      - Dalat Edensee
+      - Ana Mandara Villas
+    buttons:
+      - title: Khách sạn theo hạng
+        payload: /khach_san_hang_sao
+      - title: Quay lại
+        payload: /greet
+
+  utter_nha_nghi:
+  - text: Những nhà nghỉ ở Đà Lạt.
+    buttons:
+      - title: Quay lại
+        payload: /greet
+
+  utter_homestay:
+  - text: Những homestay ở Đà Lạt.
+    buttons:
+      - title: Quay lại
+        payload: /greet
+
+  utter_uu_dai_tot_nhat:
+  - text: "I am a bot, powered by Rasa."
+    buttons:
+      - title: Quay lại
+        payload: /greet
+
+  utter_gia_re:
+  - text: "I am a bot, powered by Rasa."
+    buttons:
+      - title: Quay lại
+        payload: /greet
+
+  utter_dich_vu:
+  - text: Đà Lạt luôn nổi tiếng là một thành phố du lịch hấp dẫn và những dịch vụ tuyệt vời.
+    buttons:
+      - title: Dịch vụ thuê xe
+        payload: /dich_vu_thue_xe
+      - title: Dịch vụ thuê chụp hình
+        payload: /dich_vu_thue_chup_hinh
+      - title: Dịch vụ đặt vé xe
+        payload: /dich_vu_thue_ve_xe
+      - title: Dịch vụ đặt phòng
+        payload: /dich_vu_thue_phong
+      - title: Dịch vụ hướng dẫn Tours du lịch
+        payload: /trung_tam_huong_dan_tours
+      - title: Quay lại
+        payload: /greet
+
+  utter_dich_vu_thue_xe:
+  - text: Dịch vụ thuê xe di chuyển Đà Lạt.
+    buttons:
+      - title: Dịch vụ thuê xe máy
+        payload: /dich_vu_thue_xe_may
+      - title: Dịch vụ thuê xe ôtô
+        payload: /dich_vu_thue_oto
+      - title: Các dịch vụ dành cho du khách
+        payload: /dich_vu
+      - title: Quay lại
+        payload: /greet
+
+  utter_dich_vu_thue_xe_may:
+  - text: |-
+      Điểm cho thuê xe máy ở Đà Lạt:
+      - Mr Din địa chỉ: số 11 Lý Tự Trọng, phường 2
+      - Chị Hoa địa chỉ: số 24 Nguyễn Lương Bằng, phường 2
+      - Chị Hà địa chỉ: số 2 Nguyễn Chí Thanh, phường 1
+      - Du Đà Lạt địa chỉ: 48B Nguyễn trãi
+      - Cào Cào địa chỉ: số 72/2 Nguyễn Văn Trỗi, phường 2
+    buttons:
+      - title: Dịch vụ thuê xe di chuyển Đà Lạt
+        payload: /dich_vu_thue_xe
+      # - title: Quay lại
+      #   payload: /greet
+
+  utter_dich_vu_thue_oto:
+  - text: Điểm cho thuê oto ở Đà Lạt.
+    buttons:
+    - title: Nhà xe Phương Trang
+      payload: /nha_xe_Phuong_Trang
+    - title: Nhà xe Thành Bưởi
+      payload: /nha_xe_Thanh_Buoi
+    - title: Nhà xe Nguyễn Kim
+      payload: /nha_xe_Nguyen_Kim
+    - title: Dịch vụ thuê xe di chuyển Đà Lạt
+      payload: /dich_vu_thue_xe
+    # - title: Quay lại
+    #   payload: /greet
+
+  utter_nha_xe_Phuong_Trang:
+  - text: |-
+      Nhà xe Phương Trang xuất phát từ Sài Gòn, xuất phát tất cả các khung giờ trong ngày, cứ  1 tiếng sẽ có một chuyến xe lên Đà Lạt.
+        - Địa điểm đón và trả khách ở Sài Gòn:
+        Bến xe Miền Tây - 395 Kinh Dương Vương, Phường An Lạc, Quận Bình Tân, TP Hồ Chí Minh.
+        Bến xe Miền Đông - 292 Đinh Bộ Lĩnh, Phường 26, Quận Bình Thạnh, TP Hồ Chí Minh.
+        Bến xe An Sương  Quốc Lộ 22, Ấp Đông Lân, Bà Điểm, Hóc Môn.
+
+        - Địa điểm đón và trả khách ở Đà Lạt:
+        Bến xe liên tỉnh Đà Lạt - Số 01 Tô Hiến Thành, Phường 3, Thành phố Đà Lạt, Lâm Đồng.
+        Nhà xe Phương Trang có xe trung chuyển từ bến xe về trung tâm Thành phố Đà Lạt.
+    buttons:
+    - title: Điểm cho thuê oto ở Đà Lạt
+      payload: /dich_vu_thue_oto
+
+  utter_nha_xe_Thanh_Buoi:
+  - text: |-
+      Nhà xe Thành Bưởi xuất phát từ Sài Gòn: 08:15, 10:15 và 22:15 hàng ngày. Đối với xe hợp đồng là 30 phút sẽ có một chuyến.
+        Địa điểm đón và trả khách ở Sài Gòn: Bến xe Miền Đông (có xe trung chuyển).
+        Địa điểm đón và trả khách ở Đà Lạt:
+        Bến xe Thành Bưởi - Số 06 Đường Lữ Gia, Phường 9, Thành phố Đà Lạt, Lâm Đồng.
+        Nhà xe có xe trung chuyển về khu vực trung tâm thành phố.
+    buttons:
+    - title: Điểm cho thuê oto ở Đà Lạt
+      payload: /dich_vu_thue_oto
+
+  utter_nha_xe_Nguyen_Kim:
+  - text: |-
+      Nhà xe Nguyễn Kim xuất phát từ Sài Gòn: 07:15, 22:45, 23:00, 23:15, 23:30, 23:45 và 23:59 hàng ngày.
+        Địa điểm đón và trả khách ở Sài Gòn:
+        Văn phòng Sài Gòn - Số 275F Phạm Ngũ Lão, Phường Phạm Ngũ Lão, Quận 1, TP Hồ Chí Minh.
+        Địa điểm đón và trả khách ở Đà Lạt:
+        Văn phòng tại Đà Lạt - Số 17 Lương Thế Vinh, Phường 3, Thành phố Đà Lạt (có xe trung chuyển khu vực trung tâm thành phố).
+    buttons:
+    - title: Điểm cho thuê oto ở Đà Lạt
+      payload: /dich_vu_thue_oto
+
+  utter_dich_vu_thue_chup_hinh:
+  - text: |-
+      Studio Chuyên Dịch Vụ Chụp Ảnh Đà Lạt:
+      - Văn Phòng Giao Dịch: Lê Đại Hành, Phường 1
+      - Văn Phòng Chính: 35 đường Nam Hồ, Phường 11
+      - Hotline: 0374 190 950
+    buttons:
+    - title: Các dịch vụ dành cho du khách
+      payload: /dich_vu
+      
+  utter_dich_vu_dat_ve_xe:
+  - text: |-
+      Nhà xe đặt vé đi Đà Lạt
+      - Điền Linh Limousine với 36 giường
+      - An Anh Limousine với 24 phòng đôi
+      - Tân Niên với 34 giường
+      - Nguyễn Kim Limousine với 24 phòng
+      - Hoà Hiệp với 40 chỗ
+    buttons:
+    - title: Các dịch vụ dành cho du khách
+      payload: /dich_vu
+
+  utter_dich_vu_dat_phong:
+  - text: "I am a bot, powered by Rasa."
+    buttons:
+    - title: Các dịch vụ dành cho du khách
+      payload: /dich_vu
+
+  utter_trung_tam_huong_dan_tours:
+  - text: Vui lòng liên hệ 0263 3517888 để nhận được tư vấn cụ thể
+    buttons:
+    - title: Các dịch vụ dành cho du khách
+      payload: /dich_vu
