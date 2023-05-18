@@ -48,15 +48,20 @@ stories:
   - intent: bot_challenge
   - action: utter_iamabot
 
+- story: dia_diem_du_lich
+  steps:
+  - intent: dia_diem_du_lich
+  - action: utter_dia_diem_du_lich
+
 - story: trung_tam_thanh_pho
   steps:
   - intent: trung_tam_thanh_pho
   - action: utter_trung_tam_thanh_pho
 
-- story: ngoai_o_thanh_pho
+- story: ngoai_thanh_thanh_pho
   steps:
-  - intent: ngoai_o_thanh_pho
-  - action: utter_ngoai_o_thanh_pho
+  - intent: ngoai_thanh_thanh_pho
+  - action: utter_ngoai_thanh_thanh_pho
 
 - story: khach_san_hang_sao
   steps:
@@ -88,4 +93,147 @@ stories:
   - intent: khach_san_5_sao
   - action: utter_khach_san_5_sao
 
+- story: nha_nghi
+  steps:
+  - intent: nha_nghi
+  - action: utter_nha_nghi
 
+- story: homestay
+  steps:
+  - intent: homestay
+  - action: utter_homestay
+
+- story: dich_vu
+  steps:
+  - intent: dich_vu
+  - action: utter_dich_vu
+
+- story: dich_vu_thue_xe
+  steps:
+  - intent: dich_vu_thue_xe
+  - action: utter_dich_vu_thue_xe
+
+- story: dich_vu_thue_xe_may
+  steps:
+  - intent: dich_vu_thue_xe_may
+  - action: utter_dich_vu_thue_xe_may
+
+- story: dich_vu_thue_oto
+  steps:
+  - intent: dich_vu_thue_oto
+  - action: utter_dich_vu_thue_oto
+
+- story: nha_xe_Phuong_Trang
+  steps:
+  - intent: nha_xe_Phuong_Trang
+  - action: utter_nha_xe_Phuong_Trang
+
+- story: nha_xe_Thanh_Buoi
+  steps:
+  - intent: nha_xe_Thanh_Buoi
+  - action: utter_nha_xe_Thanh_Buoi
+
+- story: nha_xe_Nguyen_Kim
+  steps:
+  - intent: nha_xe_Nguyen_Kim
+  - action: utter_nha_xe_Nguyen_Kim
+
+- story: dich_vu_thue_chup_hinh
+  steps:
+  - intent: dich_vu_thue_chup_hinh
+  - action: utter_dich_vu_thue_chup_hinh
+
+- story: dich_vu_huong_dan_tour
+  steps:
+  - intent: dich_vu_huong_dan_tour
+  - action: utter_dich_vu_huong_dan_tour
+
+- story: am_thuc
+  steps:
+  - intent: am_thuc
+  - action: utter_am_thuc
+
+- story: quan_nuong
+  steps:
+  - intent: quan_nuong
+  - action: utter_quan_nuong
+
+- story: quan_lau
+  steps:
+  - intent: quan_lau
+  - action: utter_quan_lau
+
+- story: quan_an_vat
+  steps:
+  - intent: quan_an_vat
+  - action: utter_quan_an_vat
+
+- story: quan_chay
+  steps:
+  - intent: quan_chay
+  - action: utter_quan_chay
+
+- story: quan_ca_phe
+  steps:
+  - intent: quan_ca_phe
+  - action: utter_quan_ca_phe
+
+- story: quan_tra_sua
+  steps:
+  - intent: quan_tra_sua
+  - action: utter_quan_tra_sua
+
+- story: tour_du_lich
+  steps:
+  - intent: tour_du_lich
+  - action: utter_tour_du_lich
+
+- story: mua_xuan
+  steps:
+  - intent: mua_xuan
+  - action: utter_mua_xuan
+
+- story: mua_ha
+  steps:
+  - intent: mua_ha
+  - action: utter_mua_ha
+
+- story: mua_thu
+  steps:
+  - intent: mua_thu
+  - action: utter_mua_thu
+
+- story: mua_dong
+  steps:
+  - intent: mua_dong
+  - action: utter_mua_dong
+
+- story: le_hoi
+  steps:
+  - intent: le_hoi
+  - action: utter_le_hoi
+
+- story: su_kien_thuong_nien
+  steps:
+  - intent: su_kien_thuong_nien
+  - action: utter_su_kien_thuong_nien
+
+- story: kien_thuc_du_lich
+  steps:
+  - intent: kien_thuc_du_lich
+  - action: utter_kien_thuc_du_lich
+
+- story: kinh_nghiem
+  steps:
+  - intent: kinh_nghiem
+  - action: utter_kinh_nghiem
+
+- story: meo_du_lich
+  steps:
+  - intent: meo_du_lich
+  - action: utter_meo_du_lich
+
+- story: cam_nang
+  steps:
+  - intent: cam_nang
+  - action: utter_cam_nang

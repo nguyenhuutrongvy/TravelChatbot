@@ -50,17 +50,22 @@ rules:
   - intent: ask_bot_name
   - action: utter_ask_bot_name
 
-- rule: Say 'trungtam' anytime the user ask your "trung_tam_thanh_pho"
+- rule: dia_diem_du_lich
+  steps:
+  - intent: dia_diem_du_lich
+  - action: utter_dia_diem_du_lich
+
+- rule: Say 'trung tâm' anytime the user ask your "trung_tam_thanh_pho"
   steps:
   - intent: trung_tam_thanh_pho
   - action: utter_trung_tam_thanh_pho
 
-- rule: ngoai_o_thanh_pho
+- rule: ngoai_thanh_thanh_pho
   steps:
-  - intent: ngoai_o_thanh_pho
-  - action: utter_ngoai_o_thanh_pho
+  - intent: ngoai_thanh_thanh_pho
+  - action: utter_ngoai_thanh_thanh_pho
 
-- rule: Say 'khach_san_hang_sao' anytime the user ask your "khach_san_hang_sao"
+- rule: Say 'khách sạn hạng sao' anytime the user ask your "khach_san_hang_sao"
   steps:
   - intent: khach_san_hang_sao
   - action: utter_khach_san_hang_sao
@@ -105,6 +110,11 @@ rules:
   - intent: dich_vu
   - action: utter_dich_vu
 
+- rule: dich_vu_thue_xe
+  steps:
+  - intent: dich_vu_thue_xe
+  - action: utter_dich_vu_thue_xe
+
 - rule: dich_vu_thue_xe_may
   steps:
   - intent: dich_vu_thue_xe_may
@@ -135,17 +145,97 @@ rules:
   - intent: dich_vu_thue_chup_hinh
   - action: utter_dich_vu_thue_chup_hinh
 
-- rule: dich_vu_dat_ve_xe
+- rule: dich_vu_huong_dan_tour
   steps:
-  - intent: dich_vu_dat_ve_xe
-  - action: utter_dich_vu_dat_ve_xe
+  - intent: dich_vu_huong_dan_tour
+  - action: utter_dich_vu_huong_dan_tour
 
-- rule: dich_vu_dat_phong
+- rule: am_thuc
   steps:
-  - intent: dich_vu_dat_phong
-  - action: utter_dich_vu_dat_phong
+  - intent: am_thuc
+  - action: utter_am_thuc
 
-- rule: trung_tam_huong_dan_tours
+- rule: quan_nuong
   steps:
-  - intent: trung_tam_huong_dan_tours
-  - action: utter_trung_tam_huong_dan_tours
+  - intent: quan_nuong
+  - action: utter_quan_nuong
+
+- rule: quan_lau
+  steps:
+  - intent: quan_lau
+  - action: utter_quan_lau
+
+- rule: quan_an_vat
+  steps:
+  - intent: quan_an_vat
+  - action: utter_quan_an_vat
+
+- rule: quan_chay
+  steps:
+  - intent: quan_chay
+  - action: utter_quan_chay
+
+- rule: quan_ca_phe
+  steps:
+  - intent: quan_ca_phe
+  - action: utter_quan_ca_phe
+
+- rule: quan_tra_sua
+  steps:
+  - intent: quan_tra_sua
+  - action: utter_quan_tra_sua
+
+- rule: tour_du_lich
+  steps:
+  - intent: tour_du_lich
+  - action: utter_tour_du_lich
+
+- rule: mua_xuan
+  steps:
+  - intent: mua_xuan
+  - action: utter_mua_xuan
+
+- rule: mua_ha
+  steps:
+  - intent: mua_ha
+  - action: utter_mua_ha
+
+- rule: mua_thu
+  steps:
+  - intent: mua_thu
+  - action: utter_mua_thu
+
+- rule: mua_dong
+  steps:
+  - intent: mua_dong
+  - action: utter_mua_dong
+
+- rule: le_hoi
+  steps:
+  - intent: le_hoi
+  - action: utter_le_hoi
+
+- rule: su_kien_thuong_nien
+  steps:
+  - intent: su_kien_thuong_nien
+  - action: utter_su_kien_thuong_nien
+
+- rule: kien_thuc_du_lich
+  steps:
+  - intent: kien_thuc_du_lich
+  - action: utter_kien_thuc_du_lich
+
+- rule: kinh_nghiem
+  steps:
+  - intent: kinh_nghiem
+  - action: utter_kinh_nghiem
+
+- rule: meo_du_lich
+  steps:
+  - intent: meo_du_lich
+  - action: utter_meo_du_lich
+
+- rule: cam_nang
+  steps:
+  - intent: cam_nang
+  - action: utter_cam_nang
