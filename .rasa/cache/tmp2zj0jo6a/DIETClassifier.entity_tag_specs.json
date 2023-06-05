@@ -1,0 +1,20 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-meo_du_lich",
+      "2": "I-meo_du_lich",
+      "3": "L-meo_du_lich",
+      "4": "U-meo_du_lich",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-meo_du_lich": 1,
+      "I-meo_du_lich": 2,
+      "L-meo_du_lich": 3,
+      "U-meo_du_lich": 4,
+      "O": 0
+    },
+    "num_tags": 5
+  }
+]

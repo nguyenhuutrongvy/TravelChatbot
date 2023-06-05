@@ -39,6 +39,84 @@ intents:
   - praise
   - decry
   - bot_challenge
+  - dia_diem_du_lich:
+      use_entities: true
+  - trung_tam_thanh_pho:
+      use_entities: true
+  - ngoai_thanh_thanh_pho:
+      use_entities: true
+  - khach_san_hang_sao:
+      use_entities: true
+  - khach_san_1_sao:
+      use_entities: true
+  - khach_san_2_sao:
+      use_entities: true
+  - khach_san_3_sao:
+      use_entities: true
+  - khach_san_4_sao:
+      use_entities: true
+  - khach_san_5_sao:
+      use_entities: true
+  - nha_nghi:
+      use_entities: true
+  - homestay:
+      use_entities: true
+  - dich_vu:
+      use_entities: true
+  - dich_vu_thue_xe:
+      use_entities: true
+  - dich_vu_thue_xe_may:
+      use_entities: true
+  - dich_vu_thue_oto:
+      use_entities: true
+  - nha_xe_Phuong_Trang:
+      use_entities: true
+  - nha_xe_Thanh_Buoi:
+      use_entities: true
+  - nha_xe_Nguyen_Kim:
+      use_entities: true
+  - dich_vu_thue_chup_hinh:
+      use_entities: true
+  - dich_vu_huong_dan_tour:
+      use_entities: true
+  - am_thuc:
+      use_entities: true
+  - quan_nuong:
+      use_entities: true
+  - quan_lau:
+      use_entities: true
+  - quan_an_vat:
+      use_entities: true
+  - quan_chay:
+      use_entities: true
+  - quan_ca_phe:
+      use_entities: true
+  - quan_tra_sua:
+      use_entities: true
+  - tour_du_lich:
+      use_entities: true
+  - mua_xuan:
+      use_entities: true
+  - mua_ha:
+      use_entities: true
+  - mua_thu:
+      use_entities: true
+  - mua_dong:
+      use_entities: true
+  - le_hoi:
+      use_entities: true
+  - su_kien_thuong_nien:
+      use_entities: true
+  - kien_thuc_du_lich:
+      use_entities: true
+  - kinh_nghiem:
+      use_entities: true
+  - meo_du_lich:
+      use_entities: true
+  - cam_nang:
+      use_entities: true
+
+entites:
   - dia_diem_du_lich
   - trung_tam_thanh_pho
   - ngoai_thanh_thanh_pho
@@ -96,7 +174,7 @@ responses:
       - title: Khách sạn
         payload: /khach_san_hang_sao
       - title: Nhà nghỉ
-        payload: '/nha_nghi'
+        payload: /nha_nghi
       - title: Homestay
         payload: /homestay
       - title: Dịch vụ
@@ -599,7 +677,7 @@ responses:
       - Hồ Tuyền Lâm
       - Đường hầm đất sét
       - Trường cao đẳng sư phạm
-      - Ga Đà LẠt
+      - Ga Đà Lạt
     buttons:
     - title: Chủ đề khác
       payload: /tour_du_lich
