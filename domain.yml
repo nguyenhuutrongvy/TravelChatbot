@@ -93,7 +93,7 @@ intents:
       use_entities: true
   - quan_tra_sua:
       use_entities: true
-  - tour_du_lich:
+  - tours_du_lich:
       use_entities: true
   - mua_xuan:
       use_entities: true
@@ -144,7 +144,7 @@ entites:
   - quan_chay
   - quan_ca_phe
   - quan_tra_sua
-  - tour_du_lich
+  - tours_du_lich
   - mua_xuan
   - mua_ha
   - mua_thu
@@ -182,7 +182,7 @@ responses:
       - title: Ẩm thực
         payload: /am_thuc
       - title: Tours
-        payload: /tour_du_lich
+        payload: /tours_du_lich
       - title: Lễ hội
         payload: /le_hoi
       - title: Sự kiện thường niên
@@ -618,7 +618,7 @@ responses:
     - title: Địa điểm ăn uống khác
       payload: /am_thuc
 
-  utter_tour_du_lich:
+  utter_tours_du_lich:
   - text: Các tour du lịch theo chủ đề.
     buttons:
     - title: Mùa Xuân
@@ -644,7 +644,7 @@ responses:
       - Thung lũng tình yêu
     buttons:
     - title: Chủ đề khác
-      payload: /tour_du_lich
+      payload: /tours_du_lich
 
   utter_mua_ha:
   - text: |-
@@ -656,7 +656,7 @@ responses:
       - Sở thú Zoodoo
     buttons:
     - title: Chủ đề khác
-      payload: /tour_du_lich
+      payload: /tours_du_lich
 
   utter_mua_thu:
   - text: |-
@@ -667,7 +667,7 @@ responses:
       - Thiền viện Trúc Lâm
     buttons:
     - title: Chủ đề khác
-      payload: /tour_du_lich
+      payload: /tours_du_lich
 
   utter_mua_dong:
   - text: |-
@@ -680,7 +680,7 @@ responses:
       - Ga Đà Lạt
     buttons:
     - title: Chủ đề khác
-      payload: /tour_du_lich
+      payload: /tours_du_lich
 
   utter_le_hoi:
   - text: |-

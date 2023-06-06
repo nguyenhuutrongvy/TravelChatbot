@@ -183,10 +183,10 @@ stories:
   - intent: quan_tra_sua
   - action: utter_quan_tra_sua
 
-- story: tour_du_lich
+- story: tours_du_lich
   steps:
-  - intent: tour_du_lich
-  - action: utter_tour_du_lich
+  - intent: tours_du_lich
+  - action: utter_tours_du_lich
 
 - story: mua_xuan
   steps:

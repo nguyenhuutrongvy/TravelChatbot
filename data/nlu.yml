@@ -1,5 +1,5 @@
 version: "3.1"
-# Định nghĩa các ý định 
+# Định nghĩa các ý định (intent) 
 # Chứa các ví dụ mẫu để dạy cho bot nhận diện ý định (intent) của người dùng
 nlu:
 - intent: greet
@@ -228,24 +228,24 @@ nlu:
     - cho tôi hỏi [trung tâm thành phố] có những [địa điểm du lịch](trung_tam_thanh_pho) nào
     - trong [trung tâm] có [điểm du lịch](trung_tam_thanh_pho) nào
     - những phường [trong thành phố] có [địa điểm du lịch](trung_tam_thanh_pho)
-    - [địa điểm du lịch] [trong thành phố](trung_tam_thanh_pho)
+    - [Địa điểm du lịch] [trong thành phố](trung_tam_thanh_pho)
     - những [điểm du lịch] hấp dẫn [trong thành phố](trung_tam_thanh_pho)
-    - [trong thành phố] có [địa điểm du lịch](trung_tam_thanh_pho) nào
+    - [Trong thành phố] có [địa điểm du lịch](trung_tam_thanh_pho) nào
 
 - intent: ngoai_thanh_thanh_pho
   examples: |
     - cho tôi hỏi [ngoại ô thành phố] có những [địa điểm du lịch](ngoai_thanh_thanh_pho) nào
     - những phường ở [ngoại ô] có [địa điểm du lịch](ngoai_thanh_thanh_pho)
-    - [ngoại ô](ngoai_thanh_thanh_pho) có những phường nào
-    - [ngoại ô] có những [điểm du lịch](ngoai_thanh_thanh_pho) nổi tiếng nào
-    - [ngoại thành thành phố](ngoai_thanh_thanh_pho)
-    - [ngoại thành](ngoai_thanh_thanh_pho)
+    - [Ngoại ô](ngoai_thanh_thanh_pho) có những phường nào
+    - [Ngoại ô] có những [điểm du lịch](ngoai_thanh_thanh_pho) nổi tiếng nào
+    - [Ngoại thành thành phố](ngoai_thanh_thanh_pho)
+    - [Ngoại thành](ngoai_thanh_thanh_pho)
 
 - intent: khach_san_hang_sao
   examples: |
-    - cho em hỏi [khách sạn hạng sao](khach_san_hang_sao) ở thành phố 
-    - [hạng sao](khach_san_hang_sao)
-    - [khách sạn](khach_san_hang_sao)
+    - cho em hỏi [Khách sạn hạng sao](khach_san_hang_sao) ở thành phố 
+    - [Hạng sao](khach_san_hang_sao)
+    - [Khách sạn](khach_san_hang_sao)
 
 - intent: khach_san_1_sao
   examples: |
@@ -275,37 +275,37 @@ nlu:
 - intent: nha_nghi
   examples: |
     - cho em hỏi [nhà nghỉ](nha_nghi) ở thành phố 
-    - [nhà nghỉ](nha_nghi)
+    - [Nhà nghỉ](nha_nghi)
 
 - intent: homestay
   examples: |
     - cho em hỏi [homestay](homestay) ở thành phố
-    - [homestay](homestay)
+    - [Homestay](homestay)
 
 - intent: dich_vu
   examples: |
     - cho em hỏi [các dịch vụ](dich_vu) ở thành phố
-    - [các dịch vụ](dich_vu)
+    - [Các dịch vụ](dich_vu)
     - cho em hỏi [dịch vụ](dich_vu) ở thành phố 
-    - [dịch vụ](dich_vu)
+    - [Dịch vụ](dich_vu)
 
 - intent: dich_vu_thue_xe
   examples: |
     - cô muốn tìm [dịch vụ thuê xe di chuyển](dich_vu_thue_xe)
-    - [thuê xe di chuyển](dich_vu_thue_xe) ở thành phố
-    - [dịch vụ thuê xe di chuyển](dich_vu_thue_xe)
-    - [thuê xe di chuyển](dich_vu_thue_xe)
-    - [dịch vụ thuê xe](dich_vu_thue_xe)
-    - [thuê xe](dich_vu_thue_xe)
+    - [Thuê xe di chuyển](dich_vu_thue_xe) ở thành phố
+    - [Dịch vụ thuê xe di chuyển](dich_vu_thue_xe)
+    - [Thuê xe di chuyển](dich_vu_thue_xe)
+    - [Dịch vụ thuê xe](dich_vu_thue_xe)
+    - [Thuê xe](dich_vu_thue_xe)
 
 - intent: dich_vu_thue_xe_may
   examples: |
     - tôi muốn tìm [dịch vụ thuê xe máy di chuyển](dich_vu_thue_xe_may)
-    - [thuê xe máy di chuyển](dich_vu_thue_xe_may) ở thành phố
-    - [thuê xe máy di chuyển](dich_vu_thue_xe_may)
-    - [dịch vụ thuê xe máy](dich_vu_thue_xe_may)
-    - [thuê xe máy](dich_vu_thue_xe_may)
-    - [xe máy](dich_vu_thue_xe_may)
+    - [Thuê xe máy di chuyển](dich_vu_thue_xe_may) ở thành phố
+    - [Thuê xe máy di chuyển](dich_vu_thue_xe_may)
+    - [Dịch vụ thuê xe máy](dich_vu_thue_xe_may)
+    - [Thuê xe máy](dich_vu_thue_xe_may)
+    - [Xe máy](dich_vu_thue_xe_may)
 
 - intent: dich_vu_thue_oto
   examples: |
@@ -313,17 +313,17 @@ nlu:
     - tôi muốn tìm [dịch vụ thuê oto di chuyển](dich_vu_thue_oto)
     - tìm [dịch vụ thuê oto](dich_vu_thue_oto)
     - tìm [dịch vụ thuê ôtô](dich_vu_thue_oto)
-    - [thuê oto di chuyển](dich_vu_thue_oto) ở thành phố
-    - [thuê oto di chuyển](dich_vu_thue_oto)
-    - [thuê ôtô di chuyển](dich_vu_thue_oto)
-    - [dịch vụ thuê oto](dich_vu_thue_oto)
-    - [dịch vụ thuê ôtô](dich_vu_thue_oto)
-    - [thuê oto](dich_vu_thue_oto)
-    - [thuê ôtô](dich_vu_thue_oto)
-    - [oto di chuyển](dich_vu_thue_oto)
-    - [ôtô di chuyển](dich_vu_thue_oto)
-    - [oto](dich_vu_thue_oto)
-    - [ôtô](dich_vu_thue_oto)
+    - [Thuê oto di chuyển](dich_vu_thue_oto) ở thành phố
+    - [Thuê oto di chuyển](dich_vu_thue_oto)
+    - [Thuê ôtô di chuyển](dich_vu_thue_oto)
+    - [Dịch vụ thuê oto](dich_vu_thue_oto)
+    - [Dịch vụ thuê ôtô](dich_vu_thue_oto)
+    - [Thuê oto](dich_vu_thue_oto)
+    - [Thuê ôtô](dich_vu_thue_oto)
+    - [Oto di chuyển](dich_vu_thue_oto)
+    - [Ôtô di chuyển](dich_vu_thue_oto)
+    - [Oto](dich_vu_thue_oto)
+    - [Ôtô](dich_vu_thue_oto)
 
 - intent: dich_vu_thue_chup_hinh
   examples: |
@@ -333,21 +333,21 @@ nlu:
     - tôi muốn tìm [dịch vụ thuê chụp hình](dich_vu_thue_chup_hinh)
     - muốn [thuê chụp hình](dich_vu_thue_chup_hinh)
     - cần tìm dịch vụ thuê [chụp hình](dich_vu_thue_chup_hinh)
-    - [dịch vụ chụp hình](dich_vu_thue_chup_hinh)
-    - [chụp hình](dich_vu_thue_chup_hinh)
-    - [dịch vụ thuê chụp hình](dich_vu_thue_chup_hinh)
-    - [thuê chụp hình](dich_vu_thue_chup_hinh)
+    - [Dịch vụ chụp hình](dich_vu_thue_chup_hinh)
+    - [Chụp hình](dich_vu_thue_chup_hinh)
+    - [Dịch vụ thuê chụp hình](dich_vu_thue_chup_hinh)
+    - [Thuê chụp hình](dich_vu_thue_chup_hinh)
 
-- intent: dich_vu_huong_dan_Tour
+- intent: dich_vu_huong_dan_tour
   examples: |
-    - tôi muốn tìm [dịch vụ hướng dẫn tour du lịch](dich_vu_huong_dan_Tour)
-    - em cần tìm [dịch vụ hướng dẫn tour du lịch](dich_vu_huong_dan_Tour)
-    - mình tìm [dịch vụ hướng dẫn tour du lịch](dich_vu_huong_dan_Tour)
-    - tìm [dịch vụ hướng dẫn tour du lịch](dich_vu_huong_dan_Tour)
-    - [dịch vụ hướng dẫn tour du lịch](dich_vu_huong_dan_Tour)
-    - [dịch vụ hướng dẫn tour](dich_vu_huong_dan_Tour)
-    - [hướng dẫn tour du lịch](dich_vu_huong_dan_Tour)
-    - [hướng dẫn tour](dich_vu_huong_dan_Tour)
+    - tôi muốn tìm [dịch vụ hướng dẫn tour](dich_vu_huong_dan_tour)
+    - em cần tìm [dịch vụ hướng dẫn tour](dich_vu_huong_dan_tour)
+    - mình tìm [dịch vụ hướng dẫn tour](dich_vu_huong_dan_tour)
+    - tìm [dịch vụ hướng dẫn tour](dich_vu_huong_dan_tour)
+    - [Dịch vụ hướng dẫn tour](dich_vu_huong_dan_tour)
+    - [Dịch vụ hướng dẫn tour](dich_vu_huong_dan_tour)
+    - [Hướng dẫn tour](dich_vu_huong_dan_tour)
+    - [Hướng dẫn tour](dich_vu_huong_dan_tour)
 
 - intent: am_thuc
   examples: |
@@ -361,15 +361,15 @@ nlu:
     - muốn tìm [điểm ăn uống](am_thuc)
     - cần tìm [địa điểm ăn uống](am_thuc)
     - cần tìm [điểm ăn uống](am_thuc)
-    - [địa điểm ăn uống](am_thuc)
-    - [điểm ăn uống](am_thuc)
-    - [ăn uống](am_thuc)
-    - [ẩm thực](am_thuc)
+    - [Địa điểm ăn uống](am_thuc)
+    - [Điểm ăn uống](am_thuc)
+    - [Ăn uống](am_thuc)
+    - [Ẩm thực](am_thuc)
     - tìm [quán ăn](am_thuc)
     - tìm [quán ẩm thực](am_thuc)
-    - [quán ăn](am_thuc)
-    - [quán ăn trong thành phố](am_thuc)
-    - [quán ẩm thực](am_thuc)
+    - [Quán ăn](am_thuc)
+    - [Quán ăn trong thành phố](am_thuc)
+    - [Quán ẩm thực](am_thuc)
 
 - intent: quan_nuong
   examples: |
@@ -379,12 +379,12 @@ nlu:
     - tìm [quán nướng](quan_nuong)
     - muốn tìm [quán nướng](quan_nuong)
     - cần tìm [quán nướng](quan_nuong)
-    - [quán nướng](quan_nuong)
-    - [quán nướng](quan_nuong) nổi tiếng
-    - [quán nướng](quan_nuong) dành cho dân nhậu
-    - [quán nướng](quan_nuong) đông khách
-    - [quán nướng](quan_nuong) được đánh giá cao
-    - [quán nướng](quan_nuong) đánh giá cao
+    - [Quán nướng](quan_nuong)
+    - [Quán nướng](quan_nuong) nổi tiếng
+    - [Quán nướng](quan_nuong) dành cho dân nhậu
+    - [Quán nướng](quan_nuong) đông khách
+    - [Quán nướng](quan_nuong) được đánh giá cao
+    - [Quán nướng](quan_nuong) đánh giá cao
     - các [quán nướng](quan_nuong)
     - các [quán nướng](quan_nuong) Đà Lạt
     - các [quán nướng](quan_nuong) ở Đà Lạt
@@ -397,12 +397,12 @@ nlu:
     - tìm [quán lẩu](quan_lau)
     - muốn tìm [quán lẩu](quan_lau)
     - cần tìm [quán lẩu](quan_lau)
-    - [quán lẩu](quan_lau)
-    - [quán lẩu](quan_lau) nổi tiếng
-    - [quán lẩu](quan_lau) dành cho dân nhậu
-    - [quán lẩu](quan_lau) đông khách
-    - [quán lẩu](quan_lau) được đánh giá cao
-    - [quán lẩu](quan_lau) đánh giá cao
+    - [Quán lẩu](quan_lau)
+    - [Quán lẩu](quan_lau) nổi tiếng
+    - [Quán lẩu](quan_lau) dành cho dân nhậu
+    - [Quán lẩu](quan_lau) đông khách
+    - [Quán lẩu](quan_lau) được đánh giá cao
+    - [Quán lẩu](quan_lau) đánh giá cao
     - các [quán lẩu](quan_lau)
     - các [quán lẩu](quan_lau) Đà Lạt
     - các [quán lẩu](quan_lau) ở Đà Lạt
@@ -414,11 +414,11 @@ nlu:
     - tìm [quán chay](quan_chay)
     - muốn tìm [quán chay](quan_chay)
     - cần tìm [quán chay](quan_chay)
-    - [quán chay](quan_chay)
-    - [quán chay](quan_chay) nổi tiếng
-    - [quán chay](quan_chay) đông khách
-    - [quán chay](quan_chay) được đánh giá cao
-    - [quán chay](quan_chay) đánh giá cao
+    - [Quán chay](quan_chay)
+    - [Quán chay](quan_chay) nổi tiếng
+    - [Quán chay](quan_chay) đông khách
+    - [Quán chay](quan_chay) được đánh giá cao
+    - [Quán chay](quan_chay) đánh giá cao
     - các [quán chay](quan_chay)
     - các [quán chay](quan_chay) Đà Lạt
     - các [quán chay](quan_chay) ở Đà Lạt
@@ -431,16 +431,16 @@ nlu:
     - tìm [quán ăn vặt](quan_an_vat)
     - muốn tìm [quán ăn vặt](quan_an_vat)
     - cần tìm [quán ăn vặt](quan_an_vat)
-    - [quán ăn vặt](quan_an_vat)
-    - [ăn vặt](quan_an_vat)
-    - [quán ăn vặt](quan_an_vat) nổi tiếng
-    - [ăn vặt](quan_an_vat) nổi tiếng
-    - [quán ăn vặt](quan_an_vat) đông khách
-    - [ăn vặt](quan_an_vat) đông khách
-    - [quán ăn vặt](quan_an_vat) được đánh giá cao
-    - [ăn vặt](quan_an_vat) được đánh giá cao
-    - [quán ăn vặt](quan_an_vat) đánh giá cao
-    - [ăn vặt](quan_an_vat) đánh giá cao
+    - [Quán ăn vặt](quan_an_vat)
+    - [Ăn vặt](quan_an_vat)
+    - [Quán ăn vặt](quan_an_vat) nổi tiếng
+    - [Ăn vặt](quan_an_vat) nổi tiếng
+    - [Quán ăn vặt](quan_an_vat) đông khách
+    - [Ăn vặt](quan_an_vat) đông khách
+    - [Quán ăn vặt](quan_an_vat) được đánh giá cao
+    - [Ăn vặt](quan_an_vat) được đánh giá cao
+    - [Quán ăn vặt](quan_an_vat) đánh giá cao
+    - [Ăn vặt](quan_an_vat) đánh giá cao
     - các [quán ăn vặt](quan_an_vat)
     - các [quán ăn vặt](quan_an_vat) Đà Lạt
 
@@ -454,22 +454,22 @@ nlu:
     - cần tìm [quán cà phê](quan_ca_phe)
     - cần tìm [quán cf](quan_ca_phe)
     - tìm [quán cf](quan_ca_phe)
-    - [quán cf](quan_ca_phe)
-    - [quán cà phê](quan_ca_phe)
-    - [quán cà phê](quan_ca_phe) sáng
-    - [quán cf](quan_ca_phe) sáng
-    - [quán cà phê](quan_ca_phe) nổi tiếng
-    - [quán cf](quan_ca_phe) nổi tiếng
-    - [quán cà phê](quan_ca_phe) lâu đời
-    - [quán cf](quan_ca_phe) lâu đời
+    - [Quán cf](quan_ca_phe)
+    - [Quán cà phê](quan_ca_phe)
+    - [Quán cà phê](quan_ca_phe) sáng
+    - [Quán cf](quan_ca_phe) sáng
+    - [Quán cà phê](quan_ca_phe) nổi tiếng
+    - [Quán cf](quan_ca_phe) nổi tiếng
+    - [Quán cà phê](quan_ca_phe) lâu đời
+    - [Quán cf](quan_ca_phe) lâu đời
     - tìm [quán cà phê](quan_ca_phe) nổi tiếng
     - tìm [quán cà phê](quan_ca_phe) lâu đời
     - muốn tìm [quán cà phê](quan_ca_phe) nổi tiếng
     - muốn tìm [quán cà phê](quan_ca_phe) lâu đời
     - cần tìm [quán cà phê](quan_ca_phe) nổi tiếng
     - cần tìm [quán cà phê](quan_ca_phe) lâu đời
-    - [cf](quan_ca_phe)
-    - [cà phê](quan_ca_phe)
+    - [Cf](quan_ca_phe)
+    - [Cà phê](quan_ca_phe)
 
 - intent: quan_tra_sua
   examples: |
@@ -485,107 +485,105 @@ nlu:
     - tìm [tiệm trà sữa](quan_tra_sua)
     - muốn tìm [tiệm trà sữa](quan_tra_sua)
     - cần tìm [tiệm trà sữa](quan_tra_sua)
-    - [tiệm trà sữa](quan_tra_sua)
-    - [quán trà sữa](quan_tra_sua)
-    - [trà sữa](quan_tra_sua)
+    - [Tiệm trà sữa](quan_tra_sua)
+    - [Quán trà sữa](quan_tra_sua)
+    - [Trà sữa](quan_tra_sua)
 
-- intent: tour_du_lich
+- intent: tours_du_lich
   examples: |
-    - tôi muốn tìm [tour du lịch](tour_du_lich)
-    - em cần tìm [tour du lịch](tour_du_lich)
-    - mình tìm [tour du lịch](tour_du_lich)
-    - tui tìm [tour du lịch](tour_du_lich)
-    - tìm [tour du lịch](tour_du_lich)
-    - cần tìm [tour du lịch](tour_du_lich)
-    - [tour du lịch](tour_du_lich)
-    - [tour du lịch][theo mùa](tour_du_lich)
+    - tôi muốn tìm [tours du lịch][theo mùa](tours_du_lich)
+    - em cần tìm [tours du lịch](tours_du_lich)
+    - mình tìm [tours du lịch](tours_du_lich)
+    - tui tìm [tours du lịch](tours_du_lich)
+    - tìm [tours du lịch](tours_du_lich)
+    - cần tìm [tours du lịch](tours_du_lich)
+    - [Tours du lịch](tours_du_lich)
+    - [Tours du lịch][theo mùa](tours_du_lich)
 
 - intent: mua_xuan
   examples: |
-    - tôi muốn tìm [tour du lịch mùa xuân](mua_xuan)
-    - tôi cần tìm [tour du lịch mùa xuân](mua_xuan)
-    - tôi tìm [tour du lịch mùa xuân](mua_xuan)
-    - tìm [tour du lịch mùa xuân](mua_xuan)
-    - tìm [tour mùa xuân](mua_xuan)
-    - muốn tìm [tour du lịch mùa xuân](mua_xuan)
-    - muốn tìm [tour mùa xuân](mua_xuan)
-    - cần tìm [tour du lịch mùa xuân](mua_xuan)
-    - cần tìm [tour mùa xuân](mua_xuan)
-    - [tour du lịch mùa xuân](mua_xuan)
-    - tìm [tour mùa xuân](mua_xuan)
-    - [tour mùa xuân](mua_xuan)
-    - [tour du lịch mùa xuân](mua_xuan)
-    - [du lịch mùa xuân](mua_xuan)
-    - [mùa xuân](mua_xuan)
+    - tôi muốn tìm [tours du lịch mùa xuân](mua_xuan)
+    - tôi cần tìm [tours du lịch mùa xuân](mua_xuan)
+    - tôi tìm [tours du lịch mùa xuân](mua_xuan)
+    - tìm [tours du lịch mùa xuân](mua_xuan)
+    - tìm [tours mùa xuân](mua_xuan)
+    - muốn tìm [tours du lịch mùa xuân](mua_xuan)
+    - muốn tìm [tours mùa xuân](mua_xuan)
+    - cần tìm [tours du lịch mùa xuân](mua_xuan)
+    - cần tìm [tours mùa xuân](mua_xuan)
+    - [Tours du lịch mùa xuân](mua_xuan)
+    - tìm [tours mùa xuân](mua_xuan)
+    - [Tours mùa xuân](mua_xuan)
+    - [Tours du lịch mùa xuân](mua_xuan)
+    - [Du lịch mùa xuân](mua_xuan)
+    - [Mùa xuân](mua_xuan)
 
 - intent: mua_ha
   examples: |
-    - tôi muốn tìm [tour du lịch mùa hạ](mua_ha)
-    - tôi cần tìm [tour du lịch mùa hạ](mua_ha)
-    - tôi tìm [tour du lịch mùa hạ](mua_ha)
-    - tìm [tour du lịch mùa hạ](mua_ha)
-    - tìm [tour mùa hạ](mua_ha)
-    - muốn tìm [tour du lịch mùa hạ](mua_ha)
-    - muốn tìm [tour mùa hạ](mua_ha)
-    - cần tìm [tour du lịch mùa hạ](mua_ha)
-    - cần tìm [tour mùa hạ](mua_ha)
-    - [tour du lịch mùa hạ](mua_ha)
-    - tìm [tour mùa hạ](mua_ha)
-    - [tour mùa hạ](mua_ha)
-    - [tour du lịch mùa hạ](mua_ha)
-    - [du lịch mùa hạ](mua_ha)
-    - [mùa hạ](mua_ha)
-    - tôi muốn tìm [tour du lịch mùa hè](mua_ha)
-    - tôi cần tìm [tour du lịch mùa hè](mua_ha)
-    - tôi tìm [tour du lịch mùa hè](mua_ha)
-    - tìm [tour du lịch mùa hè](mua_ha)
-    - tìm [tour mùa hè](mua_ha)
-    - muốn tìm [tour du lịch mùa hè](mua_ha)
-    - muốn tìm [tour mùa hè](mua_ha)
-    - cần tìm [tour du lịch mùa hè](mua_ha)
-    - cần tìm [tour mùa hè](mua_ha)
-    - [tour du lịch mùa hè](mua_ha)
-    - tìm [tour mùa hè](mua_ha)
-    - [tour mùa hè](mua_ha)
-    - [tour du lịch mùa hè](mua_ha)
-    - [du lịch mùa hè](mua_ha)
-    - [mùa hè](mua_ha)
+    - tôi muốn tìm [tours du lịch mùa hạ](mua_ha)
+    - tôi tìm [tours du lịch mùa hạ](mua_ha)
+    - tìm [tours du lịch mùa hạ](mua_ha)
+    - tìm [tours mùa hạ](mua_ha)
+    - muốn tìm [tours du lịch mùa hạ](mua_ha)
+    - muốn tìm [tours mùa hạ](mua_ha)
+    - cần tìm [tours du lịch mùa hạ](mua_ha)
+    - cần tìm [tours mùa hạ](mua_ha)
+    - [Tours du lịch mùa hạ](mua_ha)
+    - tìm [tours mùa hạ](mua_ha)
+    - [Tours mùa hạ](mua_ha)
+    - [Tours du lịch mùa hạ](mua_ha)
+    - [Du lịch mùa hạ](mua_ha)
+    - [Mùa hạ](mua_ha)
+    - tôi muốn tìm [tours du lịch mùa hè](mua_ha)
+    - tôi tìm [tours du lịch mùa hè](mua_ha)
+    - tìm [tours du lịch mùa hè](mua_ha)
+    - tìm [tours mùa hè](mua_ha)
+    - muốn tìm [tours du lịch mùa hè](mua_ha)
+    - muốn tìm [tours mùa hè](mua_ha)
+    - cần tìm [tours du lịch mùa hè](mua_ha)
+    - cần tìm [tours mùa hè](mua_ha)
+    - [Tours du lịch mùa hè](mua_ha)
+    - tìm [tours mùa hè](mua_ha)
+    - [Tours mùa hè](mua_ha)
+    - [Tours du lịch mùa hè](mua_ha)
+    - [Du lịch mùa hè](mua_ha)
+    - [Mùa hè](mua_ha)
 
 - intent: mua_thu
   examples: |
-    - tôi muốn tìm [tour du lịch mùa thu](mua_thu)
-    - tôi cần tìm [tour du lịch mùa thu](mua_thu)
-    - tôi tìm [tour du lịch mùa thu](mua_thu)
-    - tìm [tour du lịch mùa thu](mua_thu)
-    - tìm [tour mùa thu](mua_thu)
-    - muốn tìm [tour du lịch mùa thu](mua_thu)
-    - muốn tìm [tour mùa thu](mua_thu)
-    - cần tìm [tour du lịch mùa thu](mua_thu)
-    - cần tìm [tour mùa thu](mua_thu)
-    - [tour du lịch mùa thu](mua_thu)
-    - tìm [tour mùa thu](mua_thu)
-    - [tour mùa thu](mua_thu)
-    - [tour du lịch mùa thu](mua_thu)
-    - [du lịch mùa thu](mua_thu)
-    - [mùa thu](mua_thu)
+    - tôi muốn tìm [tours du lịch mùa thu](mua_thu)
+    - tôi cần tìm [tours du lịch mùa thu](mua_thu)
+    - tôi tìm [tours du lịch mùa thu](mua_thu)
+    - tìm [tours du lịch mùa thu](mua_thu)
+    - tìm [tours mùa thu](mua_thu)
+    - muốn tìm [tours du lịch mùa thu](mua_thu)
+    - muốn tìm [tours mùa thu](mua_thu)
+    - cần tìm [tours du lịch mùa thu](mua_thu)
+    - cần tìm [tours mùa thu](mua_thu)
+    - [Tours du lịch mùa thu](mua_thu)
+    - tìm [tours mùa thu](mua_thu)
+    - [Tours mùa thu](mua_thu)
+    - [Tours du lịch mùa thu](mua_thu)
+    - [Du lịch mùa thu](mua_thu)
+    - [Mùa thu](mua_thu)
 
 - intent: mua_dong
   examples: |
-    - tôi muốn tìm [tour du lịch mùa đông](mua_dong)
-    - tôi cần tìm [tour du lịch mùa đông](mua_dong)
-    - tôi tìm [tour du lịch mùa đông](mua_dong)
-    - tìm [tour du lịch mùa đông](mua_dong)
-    - tìm [tour mùa đông](mua_dong)
-    - muốn tìm [tour du lịch mùa đông](mua_dong)
-    - muốn tìm [tour mùa đông](mua_dong)
-    - cần tìm [tour du lịch mùa đông](mua_dong)
-    - cần tìm [tour mùa đông](mua_dong)
-    - [tour du lịch mùa đông](mua_dong)
-    - tìm [tour mùa đông](mua_dong)
-    - [tour mùa đông](mua_dong)
-    - [tour du lịch mùa đông](mua_dong)
-    - [du lịch mùa đông](mua_dong)
-    - [mùa đông](mua_dong)
+    - tôi muốn tìm [tours du lịch mùa đông](mua_dong)
+    - tôi cần tìm [tours du lịch mùa đông](mua_dong)
+    - tôi tìm [tours du lịch mùa đông](mua_dong)
+    - tìm [tours du lịch mùa đông](mua_dong)
+    - tìm [tours mùa đông](mua_dong)
+    - muốn tìm [tours du lịch mùa đông](mua_dong)
+    - muốn tìm [tours mùa đông](mua_dong)
+    - cần tìm [tours du lịch mùa đông](mua_dong)
+    - cần tìm [tours mùa đông](mua_dong)
+    - [Tours du lịch mùa đông](mua_dong)
+    - tìm [tours mùa đông](mua_dong)
+    - [Tours mùa đông](mua_dong)
+    - [Tours du lịch mùa đông](mua_dong)
+    - [Du lịch mùa đông](mua_dong)
+    - [Mùa đông](mua_dong)
 
 - intent: le_hoi
   examples: |
@@ -602,7 +600,7 @@ nlu:
     - cần tìm [lễ hội](le_hoi)
     - tìm [lễ hội](le_hoi)
     - các [lễ hội](le_hoi)
-    - [lễ hội](le_hoi)
+    - [Lễ hội](le_hoi)
 
 - intent: su_kien_thuong_nien
   examples: |
@@ -612,10 +610,10 @@ nlu:
     - muốn tìm [sự kiện thường niên](su_kien_thuong_nien)
     - cần tìm [sự kiện thường niên](su_kien_thuong_nien)
     - tìm [sự kiện thường niên](su_kien_thuong_nien)
-    - [sự kiện thường niên](su_kien_thuong_nien)
+    - [Sự kiện thường niên](su_kien_thuong_nien)
     - các [sự kiện thường niên](su_kien_thuong_nien)
     - các [sự kiện](su_kien_thuong_nien)
-    - [sự kiện](su_kien_thuong_nien)
+    - [Sự kiện](su_kien_thuong_nien)
 
 - intent: kien_thuc_du_lich
   examples: |
@@ -625,10 +623,10 @@ nlu:
     - muốn tìm [kiến thức du lịch](kien_thuc_du_lich)
     - cần tìm [kiến thức du lịch](kien_thuc_du_lich)
     - tìm [kiến thức du lịch](kien_thuc_du_lich)
-    - [kiến thức du lịch](kien_thuc_du_lich)
+    - [Kiến thức du lịch](kien_thuc_du_lich)
     - các [kiến thức du lịch](kien_thuc_du_lich)
     - các [kiến thức](kien_thuc_du_lich)
-    - [kiến thức](kien_thuc_du_lich)
+    - [Kiến thức](kien_thuc_du_lich)
 
 - intent: kinh_nghiem
   examples: |
@@ -638,10 +636,10 @@ nlu:
     - muốn tìm [kinh nghiệm du lịch](kinh_nghiem)
     - cần tìm [kinh nghiệm du lịch](kinh_nghiem)
     - tìm [kinh nghiệm du lịch](kinh_nghiem)
-    - [kinh nghiệm du lịch](kinh_nghiem)
+    - [Kinh nghiệm du lịch](kinh_nghiem)
     - các [kinh nghiệm du lịch](kinh_nghiem)
     - các [kinh nghiệm](kinh_nghiem)
-    - [kinh nghiệm](kinh_nghiem)
+    - [Kinh nghiệm](kinh_nghiem)
 
 - intent: meo_du_lich
   examples: |
@@ -651,11 +649,11 @@ nlu:
     - muốn tìm [mẹo du lịch](meo_du_lich)
     - cần tìm [mẹo du lịch](meo_du_lich)
     - tìm [mẹo du lịch](meo_du_lich)
-    - [mẹo du lịch](meo_du_lich)
+    - [Mẹo du lịch](meo_du_lich)
     - các [mẹo du lịch](meo_du_lich)
-    - [mẹo du lịch](meo_du_lich)
+    - [Mẹo du lịch](meo_du_lich)
     - các [mẹo](meo_du_lich)
-    - [mẹo](meo_du_lich)
+    - [Mẹo](meo_du_lich)
 
 - intent: cam_nang
   examples: |
@@ -665,7 +663,7 @@ nlu:
     - muốn tìm [cẩm nang du lịch](cam_nang)
     - cần tìm [cẩm nang du lịch](cam_nang)
     - tìm [cẩm nang du lịch](cam_nang)
-    - [cẩm nang du lịch](cam_nang)
+    - [Cẩm nang du lịch](cam_nang)
     - các [cẩm nang du lịch](cam_nang)
     - các [cẩm nang](cam_nang)
-    - [cẩm nang](cam_nang)
+    - [Cẩm nang](cam_nang)
