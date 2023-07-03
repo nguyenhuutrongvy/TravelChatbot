@@ -25,6 +25,11 @@ rules:
   - intent: decry
   - action: utter_sorry
 
+- rule: Ask the user to rephrase whenever they send a message with low NLU confidence
+  steps:
+  - intent: decry
+  - action: utter_sorry
+
 - rule: Say 'thank you' anytime the user challenges
   steps:
   - intent: thanks
@@ -50,7 +55,22 @@ rules:
   - intent: ask_bot_name
   - action: utter_ask_bot_name
 
-- rule: Say 'Dia diem du lich' anytime the user ask "dia_diem_du_lich"
+# - rule: Say 'do not know' anytime the user ask "advice"
+#   steps:
+#   - intent: Unexpected
+#   - action: utter_Unexpected
+
+- rule: please_rephrase
+  steps:
+  - intent: please_rephrase
+  - action: utter_fallback
+
+- rule: question
+  steps:
+  - intent: question
+  - action: utter_answer_question
+
+- rule: Say 'Địa điểm du lịch' anytime the user ask "dia_diem_du_lich"
   steps:
   - intent: dia_diem_du_lich
   - action: utter_dia_diem_du_lich

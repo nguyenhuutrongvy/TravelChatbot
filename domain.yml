@@ -12,24 +12,6 @@ session_config:
   carry_over_slots_to_new_session: true
 
 intents:
-  # - greet:
-  #     use_entities: true
-  # - goodbye:
-  #     use_entities: true
-  # - ask_ability:
-  #     use_entities: true
-  # - ask_bot_name:
-  #     use_entities: true
-  # - thanks:
-  #     use_entities: true
-  # - howareyou:
-  #     use_entities: true
-  # - praise:
-  #     use_entities: true
-  # - decry:
-  #     use_entities: true
-  # - bot_challenge:
-  #     use_entities: true
   - greet
   - goodbye
   - ask_ability
@@ -39,6 +21,7 @@ intents:
   - praise
   - decry
   - bot_challenge
+  - please_rephrase
   - dia_diem_du_lich:
       use_entities: true
   - trung_tam_thanh_pho:
@@ -156,6 +139,8 @@ entites:
   - meo_du_lich
   - cam_nang
 
+slots: {}
+
 responses:
   utter_greet:
   - text: |-
@@ -206,9 +191,15 @@ responses:
   
   utter_sorry:
   - text: Tôi xin lỗi vì chưa quá thông minh nên chưa hiểu được bạn muốn hỏi gì. Bạn hãy hỏi lại đơn giản, rõ ràng hơn giúp tôi nhé.
+
+  utter_fallback:
+  - text: Câu hỏi của anh/ chị có thể nằm ngoài phạm vi hiểu biết của em rồi. Anh/ chị vui lòng đặt câu hỏi lại hoặc sử dụng cú pháp rõ ràng hơn giúp em ạ.
+
+  utter_answer_question:
+  - text: Anh/ Chị vui lòng đọc kỹ hướng dẫn sử dụng trước khi dùng. Cảm ơn vì đã sử dụng dịch vụ.
   
   utter_thanks:
-  - text: Không có gì. Tôi luôn sẵn sàng hỗ trợ bạn. cảm ơn bạn đã hỏi.
+  - text: Không có gì. Tôi luôn sẵn sàng hỗ trợ bạn. Cảm ơn bạn đã hỏi.
   
   utter_happy:
   - text: Cảm ơn bạn đã khen tôi. Tôi luôn sẵn lòng cung cấp thông tin cho bạn bất cứ lúc nào.

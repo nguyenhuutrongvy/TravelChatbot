@@ -210,6 +210,50 @@ nlu:
     - tào lao
     - nhầm rồi
 
+- intent: please_rephrase # Câu hỏi ngoài phạm vi của bot
+  examples: |
+    - [Hồ Xuân Hương](please_rephrase) có vẻ đẹp gì?
+    - Chợ Đà Lạt
+    - Chợ Đêm
+    - Vườn hoa Thành phố
+    - Quảng trường Lâm Viên
+    - Nhà Thờ Con Gà
+    - Ga Đà Lạt
+    - Chùa Linh Quy Pháp Ấn
+    - Thung lũng tình yêu
+    - Đồi chè Cầu Đất
+    - Làng Cù Lần
+    - Làng hoa Vạn Thành
+    - Thiền viện Trúc Lâm
+    - Hồ Tuyền Lâm
+    - Trường cao đẳng sư phạm
+    - Thác Cam Ly
+    - Đường hầm đất sét
+    - Festival Hoa
+    - Lễ hội Cồng Chiêng
+    - Lễ cúng thần suối
+    - Lễ cúng Thần BơMung
+    - Lễ hội Trà
+    - Sở thú Zoodoo
+    - Chùa Linh Quy Pháp Ấn
+    - Thác Datanla
+    - Hoa Sơn Điền Trang
+    - Đường hầm điêu khắc
+    - Nhà thờ Domaine De Marie
+    - Chùa Linh Phước
+    - Cây thông cô đơn
+    - [Café Mê Linh](please_rephrase) Garden
+    - Làng hoa Thái Phiên
+    - Đồi Robin
+    - Vườn Ánh Sáng
+    - Nông trại Cún
+
+- intent: question # Câu hỏi cho phạm vi hiểu biết của bot
+  examples: |
+    - [phạm vi hiểu biết](answer_question) của em là gì?
+    - Cho hỏi [phạm vi hiểu biết](answer_question) của em
+    - Cần biết [phạm vi hiểu biết](answer_question)
+
 - intent: bot_challenge
   examples: |
     - bạn là người máy à
