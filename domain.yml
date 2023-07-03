@@ -99,7 +99,64 @@ intents:
   - cam_nang:
       use_entities: true
 
-entites:
+actions:
+  - utter_greet
+  - utter_goodbye
+  - utter_howareyou
+  - utter_ask_ability
+  - utter_ask_bot_name
+  - utter_did_that_help
+  - utter_sorry
+  - utter_fallback
+  - utter_answer_question
+  - utter_thanks
+  - utter_happy
+  - utter_iamabot
+  - utter_no_entity
+  - utter_show_ability
+  - utter_praise
+  - utter_decry
+  - utter_bot_challenge
+  - utter_dia_diem_du_lich
+  - utter_trung_tam_thanh_pho
+  - utter_ngoai_thanh_thanh_pho
+  - utter_khach_san_hang_sao
+  - utter_khach_san_1_sao
+  - utter_khach_san_2_sao
+  - utter_khach_san_3_sao
+  - utter_khach_san_4_sao
+  - utter_khach_san_5_sao
+  - utter_nha_nghi
+  - utter_homestay
+  - utter_dich_vu
+  - utter_dich_vu_thue_xe
+  - utter_dich_vu_thue_xe_may
+  - utter_dich_vu_thue_oto
+  - utter_nha_xe_Phuong_Trang
+  - utter_nha_xe_Thanh_Buoi
+  - utter_nha_xe_Nguyen_Kim
+  - utter_dich_vu_thue_chup_hinh
+  - utter_dich_vu_huong_dan_tour
+  - utter_am_thuc
+  - utter_quan_nuong
+  - utter_quan_lau
+  - utter_quan_an_vat
+  - utter_quan_chay
+  - utter_quan_ca_phe
+  - utter_quan_tra_sua
+  - utter_tours_du_lich
+  - utter_mua_xuan
+  - utter_mua_ha
+  - utter_mua_thu
+  - utter_mua_dong
+  - utter_le_hoi
+  - utter_su_kien_thuong_nien
+  - utter_kien_thuc_du_lich
+  - utter_kinh_nghiem
+  - utter_meo_du_lich
+  - utter_cam_nang
+
+entities:
   - dia_diem_du_lich
   - trung_tam_thanh_pho
   - ngoai_thanh_thanh_pho

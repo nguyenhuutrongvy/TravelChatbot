@@ -295,36 +295,43 @@ nlu:
   examples: |
     - cho em hỏi [khách sạn 1 sao](khach_san_1_sao) ở thành phố 
     - [Khách sạn 1 sao](khach_san_1_sao)
+    - [khách sạn 1 sao](khach_san_1_sao) tại Đà Lạt
 
 - intent: khach_san_2_sao
   examples: |
     - cho em hỏi [khách sạn 2 sao](khach_san_2_sao) ở thành phố 
     - [Khách sạn 2 sao](khach_san_2_sao)
+    - [khách sạn 2 sao](khach_san_2_sao) tại Đà Lạt
 
 - intent: khach_san_3_sao
   examples: |
     - cho em hỏi [khách sạn 3 sao](khach_san_3_sao) ở thành phố 
     - [Khách sạn 3 sao](khach_san_3_sao)
+    - [khách sạn 3 sao](khach_san_3_sao) tại Đà Lạt
 
 - intent: khach_san_4_sao
   examples: |
     - cho em hỏi [khách sạn 4 sao](khach_san_4_sao) ở thành phố 
     - [Khách sạn 4 sao](khach_san_4_sao)
+    - [khách sạn 4 sao](khach_san_4_sao) tại Đà Lạt
 
 - intent: khach_san_5_sao
   examples: |
     - cho em hỏi [khách sạn 5 sao](khach_san_5_sao) ở thành phố 
     - [Khách sạn 5 sao](khach_san_5_sao)
+    - [khách sạn 5 sao](khach_san_5_sao) tại Đà Lạt
 
 - intent: nha_nghi
   examples: |
     - cho em hỏi [nhà nghỉ](nha_nghi) ở thành phố 
     - [Nhà nghỉ](nha_nghi)
+    - [nhà nghỉ](nha_nghi) tại Đà Lạt
 
 - intent: homestay
   examples: |
     - cho em hỏi [homestay](homestay) ở thành phố
     - [Homestay](homestay)
+    - [homestay](homestay) tại Đà Lạt
 
 - intent: dich_vu
   examples: |
