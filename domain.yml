@@ -193,10 +193,10 @@ responses:
   - text: Tôi xin lỗi vì chưa quá thông minh nên chưa hiểu được bạn muốn hỏi gì. Bạn hãy hỏi lại đơn giản, rõ ràng hơn giúp tôi nhé.
 
   utter_fallback:
-  - text: Câu hỏi của anh/ chị có thể nằm ngoài phạm vi hiểu biết của em rồi. Anh/ chị vui lòng đặt câu hỏi lại hoặc sử dụng cú pháp rõ ràng hơn giúp em ạ.
+  - text: Câu hỏi của bạn có thể nằm ngoài phạm vi hiểu biết của tôi. Bạn vui lòng đặt câu hỏi lại hoặc sử dụng cú pháp rõ ràng hơn giúp tôi ạ.
 
   utter_answer_question:
-  - text: Anh/ Chị vui lòng đọc kỹ hướng dẫn sử dụng trước khi dùng. Cảm ơn vì đã sử dụng dịch vụ.
+  - text: Bạn vui lòng đọc kỹ hướng dẫn sử dụng trước khi dùng. Cảm ơn vì đã sử dụng dịch vụ.
   
   utter_thanks:
   - text: Không có gì. Tôi luôn sẵn sàng hỗ trợ bạn. Cảm ơn bạn đã hỏi.
