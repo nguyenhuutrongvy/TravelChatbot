@@ -28,6 +28,16 @@ intents:
       use_entities: true
   - ngoai_thanh_thanh_pho:
       use_entities: true
+  - dia_diem_noi_bat:
+      use_entities: true
+  - ho_xuan_huong:
+      use_entities: true
+  - lam_vien:
+      use_entities: true
+  - cho_da_lat:
+      use_entities: true
+  - nha_tho_con_ga:
+      use_entities: true
   - khach_san_hang_sao:
       use_entities: true
   - khach_san_1_sao:
@@ -120,6 +130,11 @@ actions:
   - utter_dia_diem_du_lich
   - utter_trung_tam_thanh_pho
   - utter_ngoai_thanh_thanh_pho
+  - utter_dia_diem_noi_bat
+  - utter_ho_xuan_huong
+  - utter_lam_vien
+  - utter_cho_da_lat
+  - utter_nha_tho_con_ga
   - utter_khach_san_hang_sao
   - utter_khach_san_1_sao
   - utter_khach_san_2_sao
@@ -160,6 +175,11 @@ entities:
   - dia_diem_du_lich
   - trung_tam_thanh_pho
   - ngoai_thanh_thanh_pho
+  - dia_diem_noi_bat
+  - ho_xuan_huong
+  - lam_vien
+  - cho_da_lat
+  - nha_tho_con_ga
   - khach_san_hang_sao
   - khach_san_1_sao
   - khach_san_2_sao
@@ -210,6 +230,7 @@ responses:
       - Ẩm thực ở Đà Lạt
       - Các tours du lịch
       - Các dịch vụ hỗ trợ du khách
+      Dưới đây là một số chức năng bạn có thể sử dụng.
     buttons:
       - title: Điểm du lịch
         payload: /dia_diem_du_lich
@@ -280,14 +301,16 @@ responses:
   - text: Tôi là người máy trợ lý được tạo bởi nhóm Xây dựng ứng dụng chatbot hỗ trợ tư vấn thông tin du lịch.
 
   utter_dia_diem_du_lich:
-  - text: Địa điểm du lịch
+  - text: Địa điểm du lịch. Dưới đây là một vài lựa chọn.
     buttons:
       - title: Trung tâm thành phố
         payload: /trung_tam_thanh_pho
       - title: Ngoại ô thành phố
         payload: /ngoai_thanh_thanh_pho
+      - title: Địa điểm nổi bật
+        payload: /dia_diem_noi_bat
       - title: Quay lại
-        payload: /greet
+        payload: /greet      
 
   utter_trung_tam_thanh_pho:
   - text: |-
@@ -302,6 +325,7 @@ responses:
       - Vườn hoa Thành Phố trên đường Trần Quốc Toản, phường 8.
       - Thung lũng tình yêu nằm ở đường Mai Anh Đào, phường 8.
       - Vườn Ánh Sáng Lumiere 222B, đường Mai Anh Đào, phường 8.
+      Lựa chọn chức năng khác.
     buttons:
       - title: Quay lại
         payload: /dia_diem_du_lich
@@ -326,6 +350,7 @@ responses:
       - Cây thông cô đơn - Suối Vàng là cung đường đẹp nhất Đà Lạt nằm ở đường Ankroet, xã Lát, huyện Lạc Dương.
       - Café Mê Linh Garden thôn 4, xã Tà Nung.
       - Làng Cù Lần thôn Suối Cạn, xã Lát, huyện Lạc Dương.
+      Lựa chọn chức năng khác.
       # - Vườn Thú ZooDoo ở tiểu khu 94A, xã Đa Nhim, huyện Lạc Dương.
       # - Núi LangBiang thuộc thị trấn Lạc Dương, huyện Lạc Dương.
       # - Đà Lạt Milk Farm .
@@ -334,8 +359,75 @@ responses:
       - title: Quay lại
         payload: /dia_diem_du_lich
 
+  utter_dia_diem_noi_bat:
+  - text: |-
+      Địa điểm nổi bật tại Đà Lạt. Dưới đây là một vài lựa chọn.
+    buttons:
+      - title: Hồ Xuân Hương
+        payload: /ho_xuan_huong
+      - title: Quảng trường Lâm Viên
+        payload: /lam_vien
+      - title: Chợ Đêm, chợ Đà Lạt
+        payload: /cho_da_lat
+      - title: Nhà thờ Con Gà
+        payload: /nha_tho_con_ga
+      - title: Quay lại
+        payload: /dia_diem_du_lich
+
+  utter_ho_xuan_huong:
+  - text: |-
+      Khi đến nơi đây vào mùa Xuân thì du khách sẽ có thể tận mắt chiêm ngưỡng được sắc hồng rực rỡ của những cây hoa Anh Đào đang nở rộng, một bầu trời trong xanh bao la. Thời điểm ánh hoàng hôn đang dần buông xuống mặt hồ thì hồ Xuân Hương như được khoác lên mình một lớp áo huyền ảo của ánh chiều đầy rực rỡ.
+      Hồ Xuân Hương - Đà Lạt không chỉ thu hút du khách bởi nét đẹp tự nhiên, hữu tình mà còn thu hút du khách bởi rất nhiều hoạt động cực kỳ thú vị. Dưới đây là một số hoạt động mà bạn nên trải nghiệm.
+      - Đạp vịt - không phải là một trò chơi quá mới lạ nhưng lại là trò chơi mà du khách nên trải nghiệm khi có chuyến du lịch hồ Xuân Hương.
+      - Đi xe ngựa là một hoạt động cực kỳ thú vị dành cho những du khách yêu thích sự hoài cổ và có chút mạo hiểm.
+      - Uống cà phê và ngắm nhìn hồ Xuân Hương Đà Lạt vào buổi sáng hoặc ăn vật và ngắn nhìn vẻ đẹp của hồ vào buổi tối là hoạt động được rất nhiều du khách yêu thích. Vào buổi tối bạn cũng có thể cùng gia đình, bạn bè mua đồ ăn vặt như bánh tráng nướng và ngắm nhìn cảnh sắc của hồ Xuân Hương và thành phố về đêm.
+      - Vào những ngày thời tiết đẹp đặc biệt là mùa hè, du khách đi du lịch Đà Lạt có thể đến với hồ Xuân Hương để tổ chức một buổi picnic nho nhỏ cùng người thân và bạn bè của mình.
+      Lựa chọn chức năng khác.
+    buttons:
+      - title: Địa điểm khác
+        payload: /dia_diem_noi_bat
+    
+  utter_lam_vien:
+  - text: |-
+      Quảng trường Lâm Viên không chỉ là địa điểm check-in quen thuộc của giới trẻ mà còn là nơi tổ chức nhiều hoạt động hấp dẫn. Khi đến đây, bạn cũng có thể thỏa mãn niềm đam mê ăn uống và mua sắm của mình.
+      - Check-in tại nụ hoa Atiso khổng lồ - là một tác phẩm độc đáo cao hơn 15m, với khung thép xoắn theo hình búp hoa Atiso. Đây không chỉ là công trình mang tính biểu tượng mà bên trong nó còn là không gian thưởng thức cà phê thơ mộng.
+      - Tạo dáng bên cạnh khối hoa Dã Quỳ khổng lồ - Khối hoa Dã Quỳ này có kích thước khá đồ sộ với chiều cao 18m và diện tích sàn lên tới 1.200m². Bên trong công trình này là một sân khấu trình diễn có sức chứa lên đến hàng nghìn người.
+      - Ngoài hai công trình nổi bật kể trên, quảng trường Lâm Viên còn tích hợp nhiều dịch vụ giải trí khác như khu vui chơi, không gian cây xanh và khu mua sắm. Bạn có thể đi tản bộ quanh khuôn viên quảng trường Đà Lạt hoặc tham gia các trò chơi như trượt patin hay chơi ô tô điện.
+      - Vào ban ngày, bạn sẽ thấy nhiều hoạt động sôi động tại quảng trường Lâm Viên.  Đến khi màn đêm xuống, nơi đây lại khoác lên mình một chiếc áo rực rỡ từ những ánh đèn lấp lánh, đem lại cho bạn những trải nghiệm thú vị không kém.
+      Lựa chọn chức năng khác.
+    buttons:
+      - title: Địa điểm khác
+        payload: /dia_diem_noi_bat
+
+  utter_cho_da_lat:
+  - text: |-
+      Chợ đêm Đà Lạt còn có tên gọi khác là chợ Âm Phủ, là khu chợ nằm ngay trung tâm của thành phố. Vào ban ngày du khách có thể tham quan các điểm đến nổi bật của Đà Lạt còn vào bên đêm thì khu chợ này chính là một điểm đến tuyệt vời. Bạn sẽ cảm nhận được không khí náo nhiệt, sôi nổi của thành phố về đêm và hiểu hơn về con người và văn hóa của mảnh đất này. Chợ đêm Đà Lạt không đơn thuần chỉ là một khu chợ phục vụ cho việc ăn uống và vui chơi. Nơi đây có bày bán rất nhiều mặt hàng đa đạng từ quần áo, giày dép, đồ len cho đến các sản phẩm đặc sản.
+      - Đặc trưng của chợ đêm Đà Lạt chính là khu bán những mặt hàng quần áo second - hand. Đây là những quần áo đã qua sử dụng nhưng còn độ mới cao và được bán lại với mức giá rất rẻ.
+      - Đồ len chính là mặt hàng thể hiện vẻ đẹp truyền thống của người Đà Lạt. Những món đồ này cực kỳ phù hợp với thời tiết của xứ sở sương mù và được tạo nên từ đôi bàn tay điêu luyện, tỉ mỉ của các nghệ nhân.
+      - Mặt hàng mà chắc chắn du khách nào cũng muốn mua khi đến với Đà Lạt chính là những sản phẩm đặc sản. Tại chợ đêm Đà Lạt có bày bán rất nhiều sản phẩm làm nên tên tuổi của vùng đất này như các loại mứt trái cây, mứt dâu, mứt xoài. Các loại trái cây, rau củ sấy khô, sấy dẻo các loại trà và đặc biệt là cà phê của vùng đất tây nguyên.
+      - Ngoài các sản phẩm kể trên thì trái cây và rau củ cũng là sản phẩm mà du khách không thể bỏ qua. Những loại trái cây đặc sản như bơ, hồng giòn và dâu tây được bày bán khắp ở các gian hàng của chợ để du khách tùy ý lựa chọn.
+      Nếu đã ghé chợ đêm thì du khách không thể nào không thưởng thức những món ăn đường phố tuyệt ngon được bày bán tại chợ.
+      - Khi bước vào khu chợ độc đáo này thì du khách sẽ bắt gặp ngay những quầy bán sữa đậu nành với tấp nập khách hàng. Từ lâu việc thưởng thức một ly sữa đậu nành ấm áp, thơm ngon và ăn những chiếc bánh ngọt đã trở thành một hoạt động được rất nhiều du khách thích thú.
+      - Bánh tráng nướng là món ăn vặt không quá xa lạ đối với nhiều du khách và đặc biệt là các bạn trẻ, tuy nhiên thưởng thức món ăn này tại chợ đêm Đà Lạt chắc chắn sẽ khiến du khách đắm say.
+      - Đến với vùng đất có nhiều loại trái cây đặc sản như Đà Lạt thì hoa quả lắc là món ăn mà du khách nên thưởng thức nhất. Trong số các loại trái cây lắc được bày bán thì dây lắc được nhiều du khách yêu thích nhất.
+      - Nhắc đến chợ đêm Đà Lạt thì nhiều người sẽ nhớ đến ngay hình ảnh những quán ốc gánh tấp nập với nhiều loại ốc hấp dẫn xuất hiện tại khu chợ này. Chỉ với một khoảng bán nhỏ nhắn nhưng những gánh ốc lại mang đến rất nhiều món ăn độc đáo, khiến thực khách phải suýt xoa.
+      Lựa chọn chức năng khác.
+    buttons:
+      - title: Địa điểm khác
+        payload: /dia_diem_noi_bat
+
+  utter_nha_tho_con_ga:
+  - text: |-
+      Nhà thờ Con Gà còn được gọi là nhà thờ Chính Tòa Đà Lạt. Đây là một nhà thờ một công trình tôn giáo lớn nhất ở Đà Lạt. Ngoài ra đây còn là một điểm tham quan du lịch. Nơi đây chính là minh chứng rỏ nét nhất cho quá trình lịch sử, xây dựng và phát triển Đà Lạt. Vì vậy mà Nhà Thờ được quý du khách bình chọn là đi điểm du lịch lý tưởng nhất tại Đà Lạt.
+      Đến với nhà thờ Con Gà du khách sẽ được chiêm ngưỡng một nét văn hóa đặc trưng của phong cách kiến trúc Châu Âu. Cùng với đó là sự giao thoa, kết hợp với những nét văn hóa dân tộc bản địa. Đặc biệt nếu như quý du khách đến với Đà Lạt vào đúng dịp Giáng Sinh. Khi đặt chân đến với Nhà Thờ Con Gà Đà Lạt. Nhà thờ được trang trí rất trang hoàng và lộng lẫy.
+      Đây chính là một trong những Nhà thờ lớn nhất tại Thành phố Đà Lạt. Không những vậy đây lại là một địa điểm tham quan hoàn toàn miễn phí. Cũng chính vì vậy mà Nhà thờ Con Gà được quý du khách trong và ngoài nước đánh giá.
+      Lựa chọn chức năng khác.
+    buttons:
+      - title: Địa điểm khác
+        payload: /dia_diem_noi_bat
+
   utter_khach_san_hang_sao:
-  - text: Những khách sạn theo hạng ở Đà Lạt.
+  - text: Những khách sạn theo hạng ở Đà Lạt. Dưới đây là một vài lựa chọn.
     buttons:
       - title: Khách sạn 1 sao
         payload: /khach_san_1_sao
@@ -358,6 +450,7 @@ responses:
         + Cơ sở 2: 49 Nam Kỳ Khởi Nghĩa, Phường 1, Thành phố Đà Lạt.
         + Cơ sở 3: Lô C16, Hoàng Văn Thụ, phường 4, Thành phố Đà Lạt.
       - Khách sạn Hải Quyên Đà Lạt, địa chỉ: số 01 Thủ Khoa Huân, Phường 1.
+      Lựa chọn chức năng khác.
     buttons:
       - title: Quay lại
         payload: /khach_san_hang_sao
@@ -367,6 +460,7 @@ responses:
       - Khách sạn Xuân Hồng 2, địa chỉ: số 69 - 71 Nam Kỳ Khởi Nghĩa, Phường 1.
       - Khách sạn Ngọc Nguyên Anh, địa chỉ: số  103 Bùi Thị Xuân, Phường 2.
       - Moran DaLat Hotel, địa chỉ: số 05 Hoàng Diệu, Phường 2.
+      Lựa chọn chức năng khác.
     buttons:
       - title: Quay lại
         payload: /khach_san_hang_sao
@@ -375,6 +469,7 @@ responses:
   - text: |-
       - Khách sạn Victory Đà Lạt địa chỉ: số 50 Phan Như Thạch, Phường 1.
       - Khách Sạn Royal Đà Lạt - Ngay bên cạnh chợ Đà Lạt, địa chỉ: số 24 Nguyễn Chí Thanh, Phường 1..
+      Lựa chọn chức năng khác.
     buttons:  
       - title: Quay lại
         payload: /khach_san_hang_sao
@@ -384,6 +479,7 @@ responses:
       - Mường Thanh Đà Lạt Hotel - Cạnh hồ Xuân Hương Đà Lạt địa chỉ: số 42 Phan Bội Châu, Phường 2.
       - Kings DaLat Hotel địa chỉ: số 10 Bùi Thị Xuân, Phường 3.
       - Sammy Đà Lạt Hotel địa chỉ: số 01 Lê Hồng Phong, Phường 4.
+      Lựa chọn chức năng khác.
     buttons:
       - title: Quay lại
         payload: /khach_san_hang_sao
@@ -394,6 +490,7 @@ responses:
       - Ladalat
       - Dalat Edensee
       - Ana Mandara Villas
+      Lựa chọn chức năng khác.
     buttons:
       - title: Quay lại
         payload: /khach_san_hang_sao
@@ -406,6 +503,7 @@ responses:
       - Nhà nghỉ Sleep Box Đà Lạt địa chỉ: Tọa lạc tại lô E2 đường Mạc Đỉnh Chi, Phường 4, Thành phố Đà Lạt.
       - Nhà nghỉ Beepub địa chỉ: 74- Trương Công Định, Phường 1, Thành phố Đà Lạt.
       - Nhà nghỉ Đà Lạt Ngọc Phượng địa chỉ: 8a/1, đường Hải Thượng, Phường 6, Thành phố Đà Lạt.
+      Lựa chọn chức năng khác.
     buttons:
       - title: Quay lại
         payload: /greet
@@ -426,12 +524,13 @@ responses:
       - The Wilder-nest, địa chỉ: Bờ hồ Tuyền Lâm, phường 3, Đà Lạt.
       - Cá Koi Homestay Đà Lạt, địa chỉ: 2D đường 3/4, phường 3, Đà Lạt.
       - Homestay Đợi Một Người, địa chỉ: Tổ 65, đường đèo Prenn, Đà Lạt.
+      Lựa chọn chức năng khác.
     buttons:
       - title: Quay lại
         payload: /greet
 
   utter_dich_vu:
-  - text: Đà Lạt luôn nổi tiếng là một thành phố du lịch hấp dẫn và những dịch vụ tuyệt vời.
+  - text: Đà Lạt luôn nổi tiếng là một thành phố du lịch hấp dẫn và những dịch vụ tuyệt vời. Dưới đây là một vài lựa chọn.
     buttons:
       - title: Dịch vụ thuê xe
         payload: /dich_vu_thue_xe
@@ -443,7 +542,7 @@ responses:
         payload: /greet
 
   utter_dich_vu_thue_xe:
-  - text: Dịch vụ thuê xe di chuyển Đà Lạt.
+  - text: Dịch vụ thuê xe di chuyển Đà Lạt. Dưới đây là một vài lựa chọn.
     buttons:
       - title: Dịch vụ thuê xe máy
         payload: /dich_vu_thue_xe_may
@@ -462,6 +561,7 @@ responses:
       - Chị Hà địa chỉ: số 2 Nguyễn Chí Thanh, phường 1.
       - Du Đà Lạt địa chỉ: 48B Nguyễn Trãi.
       - Cào Cào địa chỉ: số 72/2 Nguyễn Văn Trỗi, phường 2.
+      Lựa chọn chức năng khác.
     buttons:
       - title: Dịch vụ thuê xe di chuyển Đà Lạt
         payload: /dich_vu_thue_xe
@@ -469,7 +569,7 @@ responses:
       #   payload: /greet
 
   utter_dich_vu_thue_oto:
-  - text: Điểm cho thuê oto ở Đà Lạt.
+  - text: Điểm cho thuê oto ở Đà Lạt. Dưới đây là một vài lựa chọn.
     buttons:
     - title: Nhà xe Phương Trang
       payload: /nha_xe_Phuong_Trang
@@ -493,6 +593,7 @@ responses:
         - Địa điểm đón và trả khách ở Đà Lạt:
         Bến xe liên tỉnh Đà Lạt - Số 01 Tô Hiến Thành, Phường 3, Thành phố Đà Lạt.
         Nhà xe Phương Trang có xe trung chuyển từ bến xe về trung tâm Thành phố Đà Lạt.
+      Lựa chọn chức năng khác.
     buttons:
     - title: Điểm cho thuê oto ở Đà Lạt
       payload: /dich_vu_thue_oto
@@ -504,6 +605,7 @@ responses:
         Địa điểm đón và trả khách ở Đà Lạt:
         Bến xe Thành Bưởi - Số 06 Đường Lữ Gia, Phường 9, Thành phố Đà Lạt.
         Nhà xe có xe trung chuyển về khu vực trung tâm thành phố.
+      Lựa chọn chức năng khác.
     buttons:
     - title: Điểm cho thuê oto ở Đà Lạt
       payload: /dich_vu_thue_oto
@@ -515,6 +617,7 @@ responses:
         Văn phòng Sài Gòn - Số 275F Phạm Ngũ Lão, Phường Phạm Ngũ Lão, Quận 1, TP Hồ Chí Minh.
         Địa điểm đón và trả khách ở Đà Lạt:
         Văn phòng tại Đà Lạt - Số 17 Lương Thế Vinh, Phường 3, Thành phố Đà Lạt (có xe trung chuyển khu vực trung tâm thành phố).
+      Lựa chọn chức năng khác.
     buttons:
     - title: Điểm cho thuê oto ở Đà Lạt
       payload: /dich_vu_thue_oto
@@ -525,18 +628,19 @@ responses:
       - Văn Phòng Giao Dịch: Lê Đại Hành, Phường 1
       - Văn Phòng Chính: 35 đường Nam Hồ, Phường 11
       - Hotline: 0374 190 950
+      Lựa chọn chức năng khác.
     buttons:
     - title: Các dịch vụ dành cho du khách
       payload: /dich_vu
       
   utter_dich_vu_huong_dan_tour:
-  - text: Vui lòng liên hệ 19001009 để nhận được tư vấn cụ thể.
+  - text: Vui lòng liên hệ 19001009 để nhận được tư vấn cụ thể. Lựa chọn chức năng khác.
     buttons:
     - title: Các dịch vụ dành cho du khách
       payload: /dich_vu
 
   utter_am_thuc:
-  - text: Địa điểm ẩm thực ở Đà Lạt.      
+  - text: Địa điểm ẩm thực ở Đà Lạt. Dưới đây là một vài lựa chọn. 
     buttons:
     - title: Quán nướng
       payload: /quan_nuong
@@ -564,6 +668,7 @@ responses:
       - Quán nướng BBQ No.1, địa chỉ: 1/3 đường Lê Hồng Phong, phường 4, Thành phố Đà Lạt.
       - Tiệm Nướng Nàng Thơ, địa chỉ: 6A Đường Hoàng Văn Thụ, Phường 4, Thành phố Đà Lạt.
       - Tiệm Nướng Khói Thông Đà Lạt, địa chỉ: 19 Đặng Thái Thân, Phường 3, Thành phố Đà Lạt.
+      Lựa chọn chức năng khác.
     buttons:
     - title: Địa điểm ăn uống khác
       payload: /am_thuc
@@ -580,6 +685,7 @@ responses:
       - Lâm Ký, địa chỉ: Số 02 Ngô Tất Tố, Phường 8, Thành phố Đà Lạt.
       - Mà La, địa chỉ: 24 Nguyễn Văn Cừ, Phường 1, Thành phố Đà Lạt.
       - Xuyên Tiêu, địa chỉ: 45 Đường Hai Bà Trưng, Phường 6, Thành phố Đà Lạt.
+      Lựa chọn chức năng khác.
     buttons:
     - title: Địa điểm ăn uống khác
       payload: /am_thuc
@@ -604,7 +710,8 @@ responses:
       - Quán Thanh Thảo: 76 Nguyễn Văn Trỗi.
       - Quán bánh tráng nướng Dì Đinh: 26 Hoàng Diệu, Phường 5, Thành phố Đà Lạt.
       - Quán bánh tráng nướng 61: 61 Nguyễn Văn Trỗi, Phường 2, Thành phố Đà Lạt.
-      - Quán bánh căn Nhà Chung: 13 Nhà Chung, Phường 3, Thành phố Đà Lạt....
+      - Quán bánh căn Nhà Chung: 13 Nhà Chung, Phường 3, Thành phố Đà Lạt.
+      Lựa chọn chức năng khác.
     buttons:
     - title: Địa điểm ăn uống khác
       payload: /am_thuc
@@ -623,6 +730,7 @@ responses:
         Cơ sở 1: 104 Bùi Thị Xuân, phường 2, TP. Đà Lạt
         Cơ sở 2: 40 Phạm Ngũ Lão, phường 3, TP. Đà Lạt.
       - Nhà hàng chay Từ Hạnh, địa chỉ: 9b Hoàng Văn Thụ, Phường 5, Đà Lạt (lối đi Thác Cam Ly).
+      Lựa chọn chức năng khác.
     buttons:
     - title: Địa điểm ăn uống khác
       payload: /am_thuc
@@ -644,6 +752,7 @@ responses:
       - Hồ Trên Mây, địa chỉ: Cuối đèo Tà Nung, xã Tà Nung, Đà Lạt.
       - Gâu Gardeny, địa chỉ: 2/2 Trần Quang Diệu, Đà Lạt.
       - Kokoro Cafe - Khu du lịch rừng lá phong, địa chỉ: 45 Đặng Thái Thân, Đà Lạt.
+      Lựa chọn chức năng khác.
     buttons:
     - title: Địa điểm ăn uống khác
       payload: /am_thuc
@@ -662,12 +771,13 @@ responses:
       - Samgongi Cha, địa chỉ: 67A Nguyễn Văn Trỗi, TP Đà Lạt.
       - Mr Good Tea, địa chỉ: 62 Nguyễn Văn Trỗi, TP Đà Lạt.
       - Ốm Sữa Milk Tea, địa chỉ: hẻm 31 Nguyễn Công Trứ, TP Đà Lạt.
+      Lựa chọn chức năng khác.
     buttons:
     - title: Địa điểm ăn uống khác
       payload: /am_thuc
 
   utter_tours_du_lich:
-  - text: Các tour du lịch theo chủ đề.
+  - text: Các tour du lịch theo chủ đề. Dưới đây là một vài lựa chọn.
     buttons:
     - title: Mùa Xuân
       payload: /mua_xuan
@@ -690,6 +800,7 @@ responses:
       - Đồi chè Cầu Đất
       - Đà Lạt Milk Farm
       - Thung lũng tình yêu
+      Lựa chọn chức năng khác.
     buttons:
     - title: Chủ đề khác
       payload: /tours_du_lich
@@ -702,6 +813,7 @@ responses:
       - Đồi chè Cầu Đất
       - Làng Cù Lần
       - Sở thú Zoodoo
+      Lựa chọn chức năng khác.
     buttons:
     - title: Chủ đề khác
       payload: /tours_du_lich
@@ -713,6 +825,7 @@ responses:
       - Đồi chè Cầu Đất
       - Thung lũng tình yêu
       - Thiền viện Trúc Lâm
+      Lựa chọn chức năng khác.
     buttons:
     - title: Chủ đề khác
       payload: /tours_du_lich
@@ -726,6 +839,7 @@ responses:
       - Đường hầm đất sét
       - Trường cao đẳng sư phạm
       - Ga Đà Lạt
+      Lựa chọn chức năng khác.
     buttons:
     - title: Chủ đề khác
       payload: /tours_du_lich
@@ -733,7 +847,8 @@ responses:
   utter_le_hoi:
   - text: |-
       Lễ hội diễn ra ở Đà Lạt:
-      Đang được cập nhật 
+      Đang được cập nhật.
+      Lựa chọn chức năng khác.
     buttons:
     - title: Quay lại
       payload: /greet
@@ -747,12 +862,13 @@ responses:
       - Tuần lễ âm vang nhạc cụ dân tộc được tổ chức vào những ngày cuối năm là thời điểm thời tiết Đà Lạt đẹp nhất trong năm, nghìn hoa khoe sắc rực rỡ và nhiều lễ hội thú vị đang chờ đón du khách.
       - Lễ cúng thần suối - nhằm mục đích tạ ơn thần nước đã mang lại may mắn mưa thuận gió hòa. Đây là một trong những lễ hội đặc sắc nhất ở Đà Lạt mà du khách có thể tham gia vào cuối tháng 3 hàng năm.
       - Lễ cúng Thần BơMung - được tổ chức bởi người bản địa Chu Ru - tộc người thiểu số định cư lâu đời ở vùng đất cao nguyên với nghề làm ruộng là chính. Diễn ra vào tầm tháng 2 âm lịch hàng năm, tập trung đông đủ người dân buôn làng tham gia lễ hội.
+      Lựa chọn chức năng khác.
     buttons:
     - title: Quay lại
       payload: /greet
 
   utter_kien_thuc_du_lich:
-  - text: Những điều cần thiết khi đi du lịch.
+  - text: Những điều cần thiết khi đi du lịch. Dưới đây là một vài lựa chọn.
     buttons:
     - title: Kinh nghiệm du lịch
       payload: /kinh_nghiem
@@ -777,6 +893,7 @@ responses:
                     Đà Lạt sẽ được tô điểm những sắc vàng của hoa Dã Quỳ sau những cơn mưa. Ngoài ra, còn có Hoa Mimosa, hóa Tam Giác Mạch, hoa cải trắng, hoa ban trắng, hoa hướng dương và đồi cỏ hồng. Rất dễ dàng để có thể săn mây thành công- một hoạt động mà ai ai cũng thích thú. Khi đến mùa này hãy nhớ mang theo vật giữ ấm cơ thể để tránh bị cảm nhé!
       - Việc di chuyển đến Đà Lạt khá là thuận lợi, dù bạn ở Bắc Trung Nam đều có thể dễ dàng lựa chọn đến Đà Lạt bằng đường hàng không hoặc xe khách.
       - Phương tiện di chuyển ở Đà Lạt: xe máy, xem đạp, xe ngựa, ô tô
+      Lựa chọn chức năng khác.
     buttons:
     - title: Quay lại
       payload: /kien_thuc_du_lich
@@ -785,6 +902,7 @@ responses:
   - text: |-
       Mẹo cần có khi đi du lịch ở Đà Lạt
       Đang cập nhật.
+      Lựa chọn chức năng khác.
     buttons:
     - title: Quay lại
       payload: /kien_thuc_du_lich
@@ -798,6 +916,7 @@ responses:
       - Các phụ kiện đi kèm: Địa hình Đà Lạt chủ yếu là những đoạn đường dốc, đồi núi, những con dường gồ ghề. Vậy nên thay vì giày cao gót, hãy mang theo những đôi giày thể thao hoặc sandal để vừa hợp thời mà lại giúp êm chân hơn khi di chuyển. Bên cạnh đó, nhớ mang theo mũ lên, kính râm, kem chống nắng.
       - Đồ dùng cá nhân: Hầu như ở các khách sạn Đà Lạt đều chuẩn bị khăn lâu, dầu gội, sữa tắm,vv… Nhưng nếu bạn ngại dùng đồ bên ngoài, hãy mang theo đồ cá nhân của mình để sử dụng cho an tâm. Tốt nhất, bạn nên bỏ chúng trong một cái bọc, để khi cần đến thì có thể thấy ngay. Nhớ cầm theo điện thoại, sạc pin rất quan trọng.
       - Các loại thuốc: Nếu cảm thấy sức khỏe yếu, bạn nên mang theo một số loại thuốc như thuốc chống say xe, thuốc đau đầu, thuốc đau bụng. Ngoài ra, nên mang theo một lọ bôi chống côn trùng cắn.
+      Lựa chọn chức năng khác.
     buttons:
     - title: Quay lại
       payload: /kien_thuc_du_lich

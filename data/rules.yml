@@ -90,6 +90,31 @@ rules:
   - intent: ngoai_thanh_thanh_pho
   - action: utter_ngoai_thanh_thanh_pho
 
+- rule: Say 'Địa điểm nổi bật' anytime the user ask "dia_diem_noi_bat"
+  steps:
+  - intent: dia_diem_noi_bat
+  - action: utter_dia_diem_noi_bat
+
+- rule: Say 'Hồ Xuân Hương' anytime the user ask "ho_xuan_huong"
+  steps:
+  - intent: ho_xuan_huong
+  - action: utter_ho_xuan_huong
+
+- rule: Say 'Quảng trường Lâm Viên' anytime the user ask "lam_vien"
+  steps:
+  - intent: lam_vien
+  - action: utter_lam_vien
+
+- rule: Say 'Chợ Đêm, chợ Đà Lạt' anytime the user ask "cho_da_lat"
+  steps:
+  - intent: cho_da_lat
+  - action: utter_cho_da_lat
+
+- rule: Say 'Nhà thờ Con Gà' anytime the user ask "nha_tho_con_ga"
+  steps:
+  - intent: nha_tho_con_ga
+  - action: utter_nha_tho_con_ga
+
 - rule: Say 'Khách sạn hạng sao' anytime the user ask "khach_san_hang_sao"
   steps:
   - intent: khach_san_hang_sao

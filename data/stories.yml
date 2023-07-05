@@ -63,6 +63,31 @@ stories:
   - intent: ngoai_thanh_thanh_pho
   - action: utter_ngoai_thanh_thanh_pho
 
+- story: dia_diem_du_lich
+  steps:
+  - intent: dia_diem_du_lich
+  - action: utter_dia_diem_du_lich
+
+- story: ho_xuan_huong
+  steps:
+  - intent: ho_xuan_huong
+  - action: utter_ho_xuan_huong
+
+- story: lam_vien
+  steps:
+  - intent: lam_vien
+  - action: utter_lam_vien
+
+- story: cho_da_lat
+  steps:
+  - intent: cho_da_lat
+  - action: utter_cho_da_lat
+
+- story: nha_tho_con_ga
+  steps:
+  - intent: nha_tho_con_ga
+  - action: utter_nha_tho_con_ga
+
 - story: khach_san_hang_sao
   steps:
   - intent: khach_san_hang_sao

@@ -212,12 +212,7 @@ nlu:
 
 - intent: please_rephrase # Câu hỏi ngoài phạm vi của bot
   examples: |
-    - [Hồ Xuân Hương](please_rephrase) có vẻ đẹp gì?
-    - Chợ Đà Lạt
-    - Chợ Đêm
     - Vườn hoa Thành phố
-    - Quảng trường Lâm Viên
-    - Nhà Thờ Con Gà
     - Ga Đà Lạt
     - Chùa Linh Quy Pháp Ấn
     - Thung lũng tình yêu
@@ -285,9 +280,47 @@ nlu:
     - [Ngoại thành thành phố](ngoai_thanh_thanh_pho)
     - [Ngoại thành](ngoai_thanh_thanh_pho)
 
+- intent: dia_diem_noi_bat
+  examples: |
+    - cho tôi hỏi có những [địa điểm nổi bật](dia_diem_noi_bat) nào
+    - những [địa điểm nổi bật](dia_diem_noi_bat)
+    - [địa điểm nổi bật](dia_diem_noi_bat)
+    - Có những [du lịch nổi bật](dia_diem_noi_bat) nào
+    - [Địa điểm du lịch nổi bật](dia_diem_noi_bat)
+    - [Địa điểm nổi bật](dia_diem_noi_bat)
+    - [Du lịch nổi bật](dia_diem_noi_bat)
+
+- intent: ho_xuan_huong
+  examples: |
+    - cho tôi hỏi [hồ Xuân Hương](ho_xuan_huong)
+    - [Hồ Xuân Hương](ho_xuan_huong)
+    - [Hồ Xuân Hương](ho_xuan_huong) có vẻ đẹp gì
+
+- intent: lam_vien
+  examples: |
+    - cho tôi hỏi [quảng trường Lâm Viên](lam_vien)
+    - [Quảng trường Lâm Viên](lam_vien)
+    - [Quảng trường Lâm Viên](lam_vien) có vẻ đẹp gì
+
+- intent: cho_da_lat
+  examples: |
+    - cho tôi hỏi [chợ Đà Lạt](cho_da_lat)
+    - [Chợ Đà Lạt](cho_da_lat)
+    - [Chợ Đà Lạt](cho_da_lat) có vẻ đẹp gì
+    - cho tôi hỏi [chợ đêm](cho_da_lat)
+    - [Chợ đêm](cho_da_lat)
+    - [Chợ đêm](cho_da_lat) có vẻ đẹp gì
+
+- intent: nha_tho_con_ga
+  examples: |
+    - cho tôi hỏi [nhà thờ Con Gà](nha_tho_con_ga)
+    - [Nhà thờ Con Gà](nha_tho_con_ga)
+    - [Nhà thờ Con Gà](nha_tho_con_ga) có vẻ đẹp gì
+
 - intent: khach_san_hang_sao
   examples: |
-    - cho em hỏi [Khách sạn hạng sao](khach_san_hang_sao) ở thành phố 
+    - cho em hỏi [khách sạn hạng sao](khach_san_hang_sao) ở thành phố 
+    - [khách sạn](khach_san_hang_sao) tại Đà Lạt
     - [Hạng sao](khach_san_hang_sao)
     - [Khách sạn](khach_san_hang_sao)
 
